@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--background) ;
+  display: grid;
+  grid-template-rows: .5fr 1fr 2fr .5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header"
+                        "main main main main"
+                        "main main main main"
+                        "footer footer footer footer";
+                        
+}
+
+
+:root {
+  /* --background: #e0e5ec; */
+  background-image: url(../assets/images/fondo.png);
+  --background-image2: url(./assets/images/galeria/Foto-135.JPG);
+  --gray: #797d7f;
+  --facebook: #3b5999;
+  --instagram: #d63369;
+  --spotify: #00b627;
+  --youtube:  #f12400;
+  --soundcloud: rgb(252, 122, 0);
+  --about: rgb(75, 255, 75);
+  --disc: rgb(255, 85, 34);
+  --tours: rgb(75, 243, 255);
+  --contact: rgb(248, 47, 255);
+
+}
+
+
+
+
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: "Menu";
+    src: url(../assets/fonts/Insanibc.ttf);}
+
+
+
+
+
+
+/* ESTILOS DE HEADER */
+header{
+    grid-area: header;
+   
+    /* height: 10vh; */
+    /* width: 100%; */
+    background: var(--background);
+    position: fixed;
+}
+header #zona {
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    margin: 29px 0 29px 60px;
+}
+
+
+#zona:hover {
+  transform: translateY(-3px) scale(1.75);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+  filter: none;
+}
+
+.contMenu{
+    position: absolute;
+    top:  37px;
+    right: 60px;
+  
+}
+/* nav , ul , li {
+    
+} */
+.contMenu li a{
+   
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border: black solid 3px;
+    border-radius: 12%;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Menu';
+    /* padding: 15px 0; */
+}
+a{
+    cursor: pointer;
+}
+
+.contMenu ul:hover a {
+  filter: blur(2px);
+}
+.contMenu ul li a:hover {
+  transform: translateY(-3px) scale(1.20);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+  filter: none;
+}
+.contMenu ul li #about:hover {
+  background: var(--about);
+}
+
+.contMenu ul li #disc:hover {
+  background: var(--disc);
+}
+.contMenu ul li #tours:hover {
+  background: var(--tours);
+}
+.contMenu ul li #contact:hover {
+  background: var(--contact);
+}
+
+
+
+
+
+/* ESTILOS DE MAIN para INDEX*/
+main {
+    grid-area: main;
+    /* height: 100%; */
+    background-image: url(../assets/images/fondo.png);
+    display: grid;
+}
+
+
+img {
+    max-width: 100%;
+  }
+  
+  .container {
+    background-color: var(--background);
+    
+    height: 70vh;
+  }
+  
+  
+.player {
+    width: 40vw;
+    height: 70vh;
+    background-color:var(--background); 
+    margin: 200px 534px 200px 534px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+
+  .playerBtn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+   text-align: center ;
+    margin-left: 330px;
+    margin-right: 340px;
+    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+      8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    color: var(--gray);
+  }
+  
+  .playerBtn:active {
+    box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+      inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+  }
+  
+  .playerAlbum {
+    
+    margin: 40px 190px 58px 190px;
+    width: 350px;
+    top: 150px;
+    left: 200px;
+
+  }
+  
+  .playerImg {
+    border-radius: 20%;
+    box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+      -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  .playerArtist {
+    
+    font-size: 2.5em;
+    font-family: "Menu";
+    font-weight: 500;
+     opacity: 0.8; 
+    padding-top: 10px;
+    margin: 0px 311px 0px 311px;
+  }
+  
+  .playerSong {
+  
+    font-size: 1.5em;
+    font-family: "Menu";
+    font-weight: 300;
+    margin: 20px 340px 0px 340px;
+  
+  }
+  
+  .playerAudio {
+    visibility: hidden;
+  }
+  
+  .playerBtn--Medium {
+    min-height: 70px;
+    min-width: 70px;
+  }
+  
+  .blue {
+   padding-top: 25px;
+    background-color: #79f6ff;
+    color: #fff;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+
+
+/* ESTILOS DE MAIN para ABOUT*/
+
+  #aboutMe {
+    float: left;
+    width: 60vw;
+    height: 70vh;
+    background-color:var(--background); 
+    margin: 200px 100px 200px 134px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+      text-align: center;
+  }
+
+  .reseña {
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Menu';
+    font-style: italic;
+  
+  }
+
+  #aside{
+    float: right;
+    width: 15vw;
+    height: 70vh;
+    background-color:var(--background); 
+    margin: 200px 100px 200px 100px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+
+  .contGaleria{
+    margin: 30px;
+  }
+.galeria {
+  text-align: center;
+  margin-top: 40px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10%;
+  border: 2px solid black ;
+}
+
+/* ESTILOS DE MAIN para DISCOGRAFIA*/
+
+.cajaDisco1 {
+  display:inline-block;
+  width: 330px;
+  height: 430px;
+  background-color: #333; 
+  margin: 200px 100px 200px 210px;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(0, 102, 255, 0.6),
+    -9px -9px 16px rgba(7, 181, 250, 0.5);
+}
+
+.cajaDisco2 {
+  display:inline-block;
+  width: 430px;
+  height: 530px;
+  margin: 200px 50px 200px 50px;
+  background-color: #333;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(6, 7, 8, 0.6),
+    -9px -9px 16px rgba(0, 0, 0, 0.747);
+}
+
+.cajaDisco3 {
+  display:inline-block;
+  width: 330px;
+  height: 430px;
+  background-color: #333; 
+  margin: 200px 150px 200px 100px;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(0, 102, 255, 0.6),
+    -9px -9px 16px rgba(7, 181, 250, 0.5);
+}
+
+
+.cajaDisco2 iframe {
+  margin: 35px 40px 35px 40px;
+}
+.cajaDisco1 iframe {
+  margin: 25px 25px 25px 25px;
+}
+.cajaDisco3 iframe {
+  margin: 25px 25px 25px 25px;
+}
+
+
+
+
+
+/* ESTILOS DE MAIN para TOURS*/
+
+
+.titTours {
+  display: inline-block;
+  margin: 120px 860px 0px 832px;
+  font-family: 'Menu';
+  font-size: 3em;
+}
+.styledTable {
+  background-color: #333;
+  background-size: cover;
+  width: 40vw;
+  height: 70vh;
+  margin: 25px 534px 100px 534px;
+  border-width: 3px;
+  border-radius: 20px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.styledTable tr th 
+{ 
+  color: #000000; text-align: middle;
+  background-image: url(../assets/images/galeria/papeñ.jfif);
+  font-family: 'Menu';
+font-size: large;}
+
+
+
+
+
+/* ESTILOS DE MAIN para TOURS*/
+
+.formulario {
+  display: inline-block;
+  background-color: #333;
+  background-size: cover;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px 534px 100px 534px;
+  border-width: 3px;
+  border-radius: 20px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+fieldset legend {
+  font-family: 'Menu'; color: #fff;
+  font-size: 2em;
+}
+
+.textField {
+  font-family: 'Menu'; color: #fff;
+  font-size: 1em;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.radioField {
+  font-family: 'Menu'; color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#enviar{
+  font-family: 'Menu'; color: rgb(0, 0, 0);
+  font-size: 0.8em;
+}
+
+#reset {
+  font-family: 'Menu'; color: rgb(0, 0, 0);
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+/* / ESTILOS DE FOOTER */ 
+
+footer {
+    grid-area: footer;
+    /* height: 10%; */
+    /* width: 100vw; */
+    background: var(--background);
+    position: absolute;
+}
+.redes {
+    width: 320px;
+margin: 40px 753px 40px 753px;
+position: absolute;
+}
+
+.redes ul li {
+   
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .redes ul li a {
+   
+    padding: 0px 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    transition: .2s;
+  }
+  .redes ul:hover a {
+    filter: blur(2px);
+  }
+  .redes ul li a:hover {
+    transform: translateY(-3px) scale(1.20);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+    filter: none;
+  }
+  .redes ul li .facebook:hover {
+    background: var(--facebook);
+  }
+  
+  .redes ul li .instagram:hover {
+    background: var(--instagram);
+  }
+  .redes ul li .spotify:hover {
+    background: var(--spotify);
+  }
+  .redes ul li .youtube:hover {
+    background: var(--youtube);
+  }
+  .redes ul li .soundcloud:hover {
+    background: var(--soundcloud);
+  }
