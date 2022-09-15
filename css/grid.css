@@ -144,7 +144,8 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:var(--background);  
+    background-image: var(--background);
+    background: radial-gradient(circle, rgba(27,124,214,1) 17%, rgba(99,196,242,1) 71%, rgba(0,212,255,1) 88%);
     border-radius: 12px;
   
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
