@@ -477,6 +477,8 @@ footer {
   height: 10vh;
 align-items: center;
 justify-content: center;
+animation-name: animation_redes;
+animation-duration: 2s;
 }
 .redes ul li {
   display: inline-block;
@@ -520,7 +522,12 @@ justify-content: center;
 .redes ul li .soundcloud:hover {
   background: var(--soundcloud);
 }
+/* ANIMACION FOOTER */
 
+@keyframes animation_redes {
+  0%{ transform: translateY(250px);}
+  100% { transform: translateY(0px);}
+}
 
 /* DESKTOP FIRST */
 
