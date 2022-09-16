@@ -176,7 +176,7 @@ img {
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
       -9px -9px 16px rgba(255, 255, 255, 0.5);
     animation-name: animation_player;
-    animation-duration: 10s;
+    animation-duration: 5s;
    
 
 }
@@ -193,8 +193,7 @@ img {
     box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
       8px 8px 20px #0001, 5px 5px 6px 0px #0001;
     color: var(--gray);
-          animation-name: animation_playerCont;
-      animation-duration: 10s;
+
   }
   .playerBtn:active {
     box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
@@ -213,7 +212,7 @@ img {
     box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
       -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
       animation-name: animation_playerCont;
-      animation-duration: 12s;
+      animation-duration: 7s;
 
   }
   .playerArtist {
@@ -224,7 +223,7 @@ img {
      /* opacity: 0.8;  */
     margin: 20px;
     animation-name: animation_playerCont;
-    animation-duration: 13s;
+    animation-duration: 7s;
 
   }
   .playerSong {
@@ -236,7 +235,7 @@ img {
     font-weight: 300;
     margin: 0;
     animation-name: animation_playerCont;
-    animation-duration: 13s;
+    animation-duration: 7s;
 
   }
   .playerAudio {
@@ -256,7 +255,7 @@ img {
     transform: rotate(360deg);
     background-color: #35e5f1;
     animation-name: animation_playerCont;
-    animation-duration: 14s;
+    animation-duration: 8s;
 
   }
   .hide {
