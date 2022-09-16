@@ -16,7 +16,19 @@ body {
                           "main main main main"
                           "main main main main"
                           "footer footer footer footer";
-                          
+
+
+    animation-name: animation_background;
+    animation-duration: 1s;
+
+  }
+  
+
+  @keyframes animation_background {
+    0% { background-color: #c4f2fd;}
+    100% {
+      background-image: var(--background);
+    }
   }
 
   /* VARIABLES */
@@ -35,9 +47,9 @@ body {
     --disc: rgb(255, 85, 34);
     --tours: rgb(75, 243, 255);
     --contact: rgb(248, 47, 255);
-  
+
   }
-  
+
 
 /* FONTS */
 
@@ -83,7 +95,7 @@ header #zona {
 }
 
 .contMenu li a{
- 
+
   color: rgb(0, 0, 0);
   background-color: #fff;
   border: black solid 3px;
@@ -126,19 +138,21 @@ main {
 
     height: 80vh;
 
+
 }
 img {
     max-width: 100%;
-  }  
+  }
   .container {
     background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    }  
+
+
+    }
 .player {
-  width: 60vh;
+ width: 60vh;
   height: 70vh;
     display: flex;
     flex-direction: column;
@@ -147,10 +161,15 @@ img {
     background-image: var(--background);
     background: radial-gradient(circle, rgba(27,124,214,1) 17%, rgba(99,196,242,1) 71%, rgba(0,212,255,1) 88%);
     border-radius: 12px;
-  
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
       -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_player;
+    animation-duration: 10s;
+   
+
 }
+
+
   .playerBtn {
     cursor: pointer;
     height: 50px;
@@ -162,31 +181,39 @@ img {
     box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
       8px 8px 20px #0001, 5px 5px 6px 0px #0001;
     color: var(--gray);
-  } 
+          animation-name: animation_playerCont;
+      animation-duration: 10s;
+  }
   .playerBtn:active {
     box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
       inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
-  } 
+  }
   .playerAlbum {
-    
+
     width: 30vh;
 
-  } 
+  }
   .playerImg {
     border-radius: 20%;
     transform: skewY(5deg);
     transition: transform 5s;
     border: #333 solid;
     box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
-      -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);  
+      -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+      animation-name: animation_playerCont;
+      animation-duration: 12s;
+
   }
   .playerArtist {
-    
+
     font-size: 2.5em;
     font-family: "Menu";
     font-weight: 500;
      /* opacity: 0.8;  */
     margin: 20px;
+    animation-name: animation_playerCont;
+    animation-duration: 13s;
+
   }
   .playerSong {
     /* position: relative; */
@@ -196,7 +223,9 @@ img {
     font-family: "Menu";
     font-weight: 300;
     margin: 0;
-  
+    animation-name: animation_playerCont;
+    animation-duration: 13s;
+
   }
   .playerAudio {
     visibility: hidden;
@@ -214,18 +243,37 @@ img {
     transition: all 2s ease-in-out;
     transform: rotate(360deg);
     background-color: #35e5f1;
-  
+    animation-name: animation_playerCont;
+    animation-duration: 14s;
+
   }
   .hide {
     display: none;
   }
+
+  /* ANIMACIONES DEL MAIN */
+
+  @keyframes animation_player {
+    0% {opacity: 0%;
+    }
+
+    100% {    opacity: 100%;
+   
+  }
+  }
+  @keyframes animation_playerCont {
+    0% {opacity: 0%; }
+    100% {    opacity: 100%; }
   
+  } 
+
+
 /* ESTILOS DE MAIN para ABOUT*/
 #aboutMe {
   float: left;
   width: 60vw;
   height: 70vh;
-  background-color:var(--background); 
+  background-color:var(--background);
   margin: 20px 100px 200px 134px;
   border-radius: 12px;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
@@ -242,7 +290,7 @@ img {
   float: right;
   width: 15vw;
   height: 70vh;
-  background-color:var(--background); 
+  background-color:var(--background);
   margin: 20px 100px 200px 100px;
   border-radius: 12px;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
@@ -266,16 +314,16 @@ border: 2px solid black ;
   width: 100%;
   height: 80vh;
   background-image: var(--background) ;
- 
+
   grid-template-rows:  1fr 1fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: ". disco2 . "
                         "disco1 disco2 disco3 "
                         "disco1 disco2 disco3 "
-                       ; 
+                       ;
   align-items: center;
   justify-content: center;
-                        
+
 }
 
 .cajaDisco1 {
@@ -283,7 +331,7 @@ grid-area: disco1;
 display:flex;
 width: 18.5vw;
 height: 44.5vh;
-background-color: #333; 
+background-color: #333;
 margin: 0px 100px 0px 100px;
 border-radius: 12px;
 box-shadow: 9px 9px 16px rgba(0, 102, 255, 0.6),
@@ -305,7 +353,7 @@ box-shadow: 9px 9px 16px rgba(6, 7, 8, 0.6),
 display:flex;
 width:  18.5vw;
 height:  44.5vh;
-background-color: #333; 
+background-color: #333;
 margin: 0px 100px 0px 100px;
 border-radius: 12px;
 box-shadow: 9px 9px 16px rgba(0, 102, 255, 0.6),
@@ -339,8 +387,8 @@ border-radius: 20px;
 box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
   -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
-.styledTable tr th 
-{ 
+.styledTable tr th
+{
 color: #000000; text-align: middle;
 background-image: url(../assets/images/galeria/papeñ.jfif);
 font-family: 'Menu';
@@ -541,7 +589,7 @@ justify-content: center;
     }
     #check:checked ~ .navMenu {
       height: 100vh;
-    }   
+    }
     #check:checked ~ .navMenu li {
       display: block;
     }
@@ -560,16 +608,16 @@ justify-content: center;
           .player {
             width: 50vh;
             height: 70vh;
-              background-color:var(--background);  
+              background-color:var(--background);
               border-radius: 50%;
-      
+
           }
           /* CONTACTO */
           fieldset legend {
           font-family: 'Menu'; color: #fff;
           font-size: 1em;
           }
-        
+
           /* ABOUT ME */
           #aboutMe {
            display: none;
@@ -586,7 +634,7 @@ justify-content: center;
           .galeria {
             display: none;
           }
-          
+
 
         /* DISCOGRAFIA */
 
@@ -611,7 +659,7 @@ justify-content: center;
           .cajaDisco3 iframe {
             display: none;
           }
-          
+
         /* TOURS */
         .titTours {
           display: none;
@@ -619,10 +667,10 @@ justify-content: center;
           .styledTable {
             display: none;
           }
-        
+
         }
 
-        
+
 
 /* STYLE MOBILE */
 @media screen and (max-width: 468px) {
@@ -636,8 +684,8 @@ justify-content: center;
   *::after {
     box-sizing: border-box;
   }
-  
-  
+
+
     /* HEADER MOBIL */
     header {
       width: 100%;
@@ -659,7 +707,7 @@ justify-content: center;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      } 
+      }
       .barBtn {
         font-size: 25px;
         color: rgb(255, 250, 250) ;
@@ -667,7 +715,7 @@ justify-content: center;
         margin-left: 20px;
         cursor: pointer;
       }
-      
+
       .navMenu {
         position: absolute;
         width: 100%;
@@ -684,7 +732,7 @@ justify-content: center;
         transition: all .5s;
         height: 20px;
       }
-      
+
       .navMenu li a {
         color: rgb(0, 0, 0);
         font-size: 1.5em;
@@ -692,20 +740,20 @@ justify-content: center;
         font-weight: 600;
         font-family: "Menu";
       }
-      
+
       .navMenu li a.active, .navMenu li a:hover {
         color: rgb(32, 129, 219);
         transition: .3s;
       }
-      
+
       #check {
         display: none;
       }
-      
+
       #check:checked ~ .navMenu {
         height: 100vh;
       }
-      
+
       #check:checked ~ .navMenu li {
         display: block;
       }
@@ -726,23 +774,23 @@ justify-content: center;
       .player {
           width: 35vh;
           height: 63vh;
- 
-            background-color:var(--background);  
+
+            background-color:var(--background);
             border-radius: 55px;
-          
+
              box-shadow: 9px 9px 16px rgba(78, 3, 66, 0.6),
-              -9px -9px 16px rgba(31, 2, 78, 0.5); 
-         
-  
+              -9px -9px 16px rgba(31, 2, 78, 0.5);
+
+
       }
       .playerImg {
         border-radius: 50%;
         border: #333 solid;
         box-shadow: none;
       }
-      
+
       .playerArtist {
-        
+
         font-size: 2.5em;
         font-family: "Menu";
         font-weight: 500;
@@ -750,7 +798,7 @@ justify-content: center;
         margin: 20px;
         color: whitesmoke ;
       }
-      
+
       .playerSong {
         /* position: relative; */
         width: 100%;
@@ -760,14 +808,14 @@ justify-content: center;
         font-weight: 300;
         margin: 0;
         color: aliceblue;
-      
+
       }
       .blue {
         background-color: #179fa8;
         color: #fff;
       }
 
-      /* CONTACTO */   
+      /* CONTACTO */
 .form {
   display: grid;
   grid-template-columns:.5fr  1fr  .5fr ;
@@ -829,7 +877,7 @@ textarea {
           .cajaDisco3 iframe {
             display: none;
           }
-          
+
         /* TOURS */
 
 
@@ -839,8 +887,8 @@ textarea {
           .styledTable {
             display: none;
           }
-        
-        
+
+
 /* FOOTER */
 
       footer {
