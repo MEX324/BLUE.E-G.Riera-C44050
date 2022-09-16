@@ -67,7 +67,8 @@ header {
     display: flex;
     position: fixed;
     width: 100%;
-    height: 10VH;
+    height: 0vh;
+
 }
 
 header #zona {
@@ -76,6 +77,8 @@ header #zona {
     height: 70px;
     border-radius: 25%;
     margin: 29px 0 29px 60px;
+    animation-name: animation_menu;
+    animation-duration: 2s;
 }
 
 
@@ -103,6 +106,8 @@ header #zona {
   padding: 10px;
   text-decoration: none;
   font-family: 'Menu';
+  animation-name: animation_menu;
+  animation-duration: 2s;
   /* padding: 15px 0; */
 }
 a{
@@ -129,6 +134,13 @@ background: var(--tours);
 }
 .contMenu ul li #contact:hover {
 background: var(--contact);
+}
+
+/* ANIMACION HEADER */
+
+@keyframes animation_menu {
+  0%{ transform: translateY(-250px);}
+  100% { transform: translateY(0px);}
 }
 
 /* ESTILO DE MAIN INDEX */
