@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--background) ;
+    animation-name: animation_background;
+    animation-duration: 1s;
+  }
+  :root {
+    /* --background: #e0e5ec; */
+    background-image: url(../assets/images/fondo.png);
+    --background-image2: url(./assets/images/galeria/Foto-135.JPG);
+    --gray: #797d7f;
+    --facebook: #3b5999;
+    --instagram: #d63369;
+    --spotify: #00b627;
+    --youtube:  #f12400;
+    --soundcloud: rgb(252, 122, 0);
+    --about: rgb(75, 255, 75);
+    --disc: rgb(255, 85, 34);
+    --tours: rgb(75, 243, 255);
+    --contact: rgb(248, 47, 255);
+  }
