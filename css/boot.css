@@ -1,13 +1,13 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: var(--background) ;
+    background-image: var(--background-image);
     animation-name: animation_background;
     animation-duration: 1s;
   }
   :root {
     /* --background: #e0e5ec; */
-    background-image: url(../assets/images/fondo.png);
+    --background-image: url(../assets/images/fondo.png);
     --background-image2: url(./assets/images/galeria/Foto-135.JPG);
     --gray: #797d7f;
     --facebook: #3b5999;
@@ -20,3 +20,19 @@ body {
     --tours: rgb(75, 243, 255);
     --contact: rgb(248, 47, 255);
   }
+
+/* ESTILO DE HEADER */
+
+header {
+    background: var(--background);
+    width: 100%;
+    height: 0vh;
+}
+header #zona {
+    width: 70px;
+    height: 70px;
+    border-radius: 25%;
+    margin: 29px 0 29px 60px;
+    animation-name: animation_menu;
+    animation-duration: 2s;
+}
