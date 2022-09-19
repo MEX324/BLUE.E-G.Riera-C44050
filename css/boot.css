@@ -1,3 +1,7 @@
+*{
+   list-style: none;
+    text-decoration: none;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -20,19 +24,74 @@ body {
     --tours: rgb(75, 243, 255);
     --contact: rgb(248, 47, 255);
   }
+  /* FONTS */
+
+@font-face {
+    font-family: "Menu";
+    src: url(../assets/fonts/Insanibc.ttf);}
+  
+  
+  
 
 /* ESTILO DE HEADER */
 
 header {
     background: var(--background);
     width: 100%;
-    height: 0vh;
+    height: 20vh;
 }
 header #zona {
     width: 70px;
     height: 70px;
     border-radius: 25%;
-    margin: 29px 0 29px 60px;
     animation-name: animation_menu;
     animation-duration: 2s;
 }
+#zona:hover {
+    transform: translateY(-3px) scale(1.75);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+    filter: none;
+  }
+
+  .desktopMenu , .desktopUl , .desktopLi{
+    display: flex;
+  }
+  
+  .desktopMenu li a{
+
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border: black solid 3px;
+    border-radius: 12%;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Menu';
+    animation-name: animation_menu;
+    animation-duration: 2s;
+    /* padding: 15px 0; */
+  }
+  a{
+    cursor: pointer;
+  }
+  
+  .desktopMenu ul:hover a {
+  filter: blur(2px);
+  }
+  .desktopMenu ul li a:hover {
+  transform: translateY(-3px) scale(1.20);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+  filter: none;
+  }
+  .desktopMenu ul li #about:hover {
+  background: var(--about);
+  }
+  
+  .desktopMenu ul li #disc:hover {
+  background: var(--disc);
+  }
+  .desktopMenu ul li #tours:hover {
+  background: var(--tours);
+  }
+  .desktopMenu ul li #contact:hover {
+  background: var(--contact);
+  }
