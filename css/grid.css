@@ -25,7 +25,7 @@ body {
   
 
   @keyframes animation_background {
-    0% { background-color: #c4f2fd;}
+    0% {  background-image: var(--background-image)}
     100% {
       background-image: var(--background);
     }
