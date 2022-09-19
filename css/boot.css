@@ -95,3 +95,114 @@ header #zona {
   .desktopMenu ul li #contact:hover {
   background: var(--contact);
   }
+
+
+
+  /* MAIN */
+
+  main {
+    background: var(--background);
+
+    height: 80vh;
+
+}
+img {
+    max-width: 100%;
+  }
+
+  .player {
+    width: 60vh;
+     height: 70vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       background-image: var(--background);
+       background: var(--background-image);
+       border-radius: 12px;
+       box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+         -9px -9px 16px rgba(255, 255, 255, 0.5);
+       animation-name: animation_player;
+       animation-duration: 5s;
+      
+   
+   }
+   
+   
+     .playerBtn {
+       cursor: pointer;
+       height: 50px;
+       width: 50px;
+       border-radius: 50%;
+       display: flex;
+      align-items: center;
+      justify-content: center;
+       box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+         8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+       color: var(--gray);
+   
+     }
+     .playerBtn:active {
+       box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+         inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+     }
+     .playerAlbum {
+       width: 30vh;
+   
+     }
+     .playerImg {
+       border-radius: 20%;
+       transition: transform 5s;
+       border: #333 solid;
+       box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+         -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+         animation-name: animation_playerCont;
+         animation-duration: 7s;
+   
+     }
+     .playerArtist {
+   
+       font-size: 2.5em;
+       font-family: "Menu";
+       font-weight: 500;
+       margin: 20px;
+       animation-name: animation_playerCont;
+       animation-duration: 7s;
+   
+     }
+     .playerSong {
+
+       width: 100%;
+       font-size: 1.5em;
+       text-align: center;
+       font-family: "Menu";
+       font-weight: 300;
+       margin: 0;
+       animation-name: animation_playerCont;
+       animation-duration: 7s;
+   
+     }
+     .playerAudio {
+       visibility: hidden;
+     }
+     .playerBtn--Medium {
+       min-height: 70px;
+       min-width: 70px;
+     }
+   
+     .blue {
+       background: var(--background-image);
+       color: #fff;
+     }
+     .blue:hover {
+       transition: all 2s ease-in-out;
+       transform: rotate(360deg);
+       background-color: #35e5f1;
+       animation-name: animation_playerCont;
+       animation-duration: 8s;
+   
+     }
+     .hide {
+       display: none;
+     }
+   

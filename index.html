@@ -61,23 +61,27 @@
   <!-- FIN HEADER -->
   <!-- INICIO MAIN -->
   <main>
-    <div class="container">
-      <div class="player">
-        <div class="playerControls">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="player">
+          <div class="playerControls">
+          </div>
+          <div class="playerAlbum">
+            <img src="./assets/images/LOGO.png" alt="Album Cover" class="playerImg" loading="lazy" />
+          </div>
+          <h2 class="playerArtist">Blue.e</h2>
+          <h3 class="playerSong">Deep</h3>
+          <audio class="playerAudio" controls id="audio">
+            <source src="./assets/media/music/DEEP 2.0.mp3" type="audio/mpeg" />
+          </audio>
+          <div class="playerBtn playerBtn--Medium blue play" id="play">
+            <i class="fas fa-play play-btn"></i>
+            <i class="fas fa-pause pause-btn hide"></i>
+          </div>
         </div>
-        <div class="playerAlbum">
-          <img src="./assets/images/LOGO.png" alt="Album Cover" class="playerImg" loading="lazy" />
-        </div>
-        <h2 class="playerArtist">Blue.e</h2>
-        <h3 class="playerSong">Deep</h3>
-        <audio class="playerAudio" controls id="audio">
-          <source src="./assets/media/music/DEEP 2.0.mp3" type="audio/mpeg" />
-        </audio>
-        <div class="playerBtn playerBtn--Medium blue play" id="play">
-          <i class="fas fa-play play-btn"></i>
-          <i class="fas fa-pause pause-btn hide"></i>
-        </div>
-      </div>
+        <div class="col-4"></div>
     </div>
     </div>
   </main>
