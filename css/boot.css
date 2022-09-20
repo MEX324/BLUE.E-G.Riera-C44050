@@ -249,6 +249,38 @@ img {
   }
   }
 
+  /* ESTILOS DE MAIN para TOURS*/
+.titTours {
+  font-family: 'Menu';
+  font-size: 3em;
+  animation-name: animation_tours;
+  animation-duration: 5s;
+  }
+  #toursTable {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_tours;
+    animation-duration: 5s;
+  }
+  #toursTable tr th
+  {
+  font-family: 'Menu';
+  font-size: large;}
+  #toursTable td{
+    font-family: 'Menu';
+    font-size: large;
+  }
+
+  /* ANIMACION TOURS */
+  @keyframes animation_tours {
+    0% {opacity: 0%;
+    }
+
+    100% {    opacity: 100%;
+   
+  }
+  }
+
   /* ESTILO DE FOOTER */
 #footer {
     background-color: var(--background);
