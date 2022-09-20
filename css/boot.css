@@ -96,7 +96,12 @@ header #zona {
   background: var(--contact);
   }
 
+/* ANIMACION HEADER */
 
+@keyframes animation_menu {
+    0%{ transform: translateY(-250px);}
+    100% { transform: translateY(0px);}
+  }
 
   /* MAIN */
 
@@ -227,4 +232,70 @@ img {
     100% {    background: turquoise; }
   
   } 
+
+  /* ESTILO DE FOOTER */
+footer {
+    grid-area: footer;
+    background-color: var(--background);
+    display: flex;
+    height: 10vh;
+    align-items: center;
+  justify-content: center;
+}
+.redes {
+  display: flex;
+  height: 10vh;
+align-items: center;
+justify-content: center;
+animation-name: animation_redes;
+animation-duration: 2s;
+}
+.redes ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.redes ul li a {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: #fff;
+  line-height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+  transition: .2s;
+}
+.redes ul:hover a {
+  filter: blur(2px);
+}
+.redes ul li a:hover {
+  transform: translateY(-3px) scale(1.20);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+  filter: none;
+}
+.redes ul li .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes ul li .instagram:hover {
+  background: var(--instagram);
+}
+.redes ul li .spotify:hover {
+  background: var(--spotify);
+}
+.redes ul li .youtube:hover {
+  background: var(--youtube);
+}
+.redes ul li .soundcloud:hover {
+  background: var(--soundcloud);
+}
+/* ANIMACION FOOTER */
+
+@keyframes animation_redes {
+  0%{ transform: translateY(250px);}
+  100% { transform: translateY(0px);}
+}
 
