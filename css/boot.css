@@ -33,7 +33,6 @@ body {
   
 
 /* ESTILO DE HEADER */
-
 header {
     background: var(--background);
     height: 10vh;
@@ -51,11 +50,9 @@ header #logo {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
     filter: none;
   }
-
   .desktopMenu , .desktopUl , .desktopLi{
     display: flex;
   }
-  
   .desktopMenu li a{
 
     color: rgb(0, 0, 0);
@@ -73,7 +70,6 @@ header #logo {
   a{
     cursor: pointer;
   }
-  
 .desktopUl{
   padding: 0;
 }
@@ -88,7 +84,6 @@ header #logo {
   .desktopMenu ul li #about:hover {
   background: var(--about);
   }
-  
   .desktopMenu ul li #disc:hover {
   background: var(--disc);
   }
@@ -100,12 +95,10 @@ header #logo {
   }
 
 /* ANIMACION HEADER */
-
 @keyframes animation_menu {
     0%{ transform: translateY(-250px);}
     100% { transform: translateY(0px);}
   }
-
   /* MAIN */
 
   #main {
@@ -117,7 +110,6 @@ header #logo {
 img {
     max-width: 100%;
   }
-
   .player {
    /* width: 60vh; */
      height: 70vh; 
@@ -132,11 +124,7 @@ img {
          -9px -9px 16px rgba(255, 255, 255, 0.5);
        animation-name: animation_player;
        animation-duration: 5s;
-      
-   
-   }
-   
-   
+   }  
      .playerBtn {
        cursor: pointer;
        height: 50px;
@@ -236,6 +224,30 @@ img {
     100% {    background: turquoise; }
   
   } 
+
+
+  /* STILE CONTACTO */
+
+  #formulario {
+    font-family: "Menu";
+    animation-name: animation_formulario;
+    animation-duration: 5s;
+    background-image: var(--background-image);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+
+  /* ANIMACION CONTACTO */
+
+  
+  @keyframes animation_formulario {
+    0% {opacity: 0%;
+    }
+
+    100% {    opacity: 100%;
+   
+  }
+  }
 
   /* ESTILO DE FOOTER */
 #footer {
