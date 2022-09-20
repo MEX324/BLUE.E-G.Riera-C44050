@@ -45,7 +45,7 @@ header #zona {
     border-radius: 25%;
     animation-name: animation_menu;
     animation-duration: 2s;
-    margin-top: 15px;
+  
 }
 #zona:hover {
     transform: translateY(-3px) scale(1.75);
@@ -295,3 +295,44 @@ animation-duration: 2s;
   100% { transform: translateY(0px);}
 }
 
+
+/* MEDIA QUERIS */
+
+/* STYLE MOBILE Y TABLET PARA HEADER */
+@media screen and (max-width: 991.98px) {
+  #logoDesktop{
+    display: none;
+  }
+  #vacioDesktop{
+    display: none;
+  }
+  #menuDesktop{
+    display: none;
+  }
+  #zona:hover {
+    transform: translateY(-1px) scale(1.00);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+    filter: none;
+  }
+  .navMenu li {
+    line-height: 20px;
+    margin: 50px 0;
+    transition: all .5s;
+    height: 20px;
+  }
+
+  .navMenu li a {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Menu";
+   
+  }
+
+  .navMenu li a.active, .navMenu li a:hover {
+    color: rgb(32, 129, 219);
+    transition: .3s;
+  }
+
+}
