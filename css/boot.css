@@ -39,7 +39,7 @@ header {
     background: var(--background);
     height: 10vh;
 }
-header #zona {
+header #logo {
     width: 70px;
     height: 70px;
     border-radius: 25%;
@@ -47,7 +47,7 @@ header #zona {
     animation-duration: 2s;
   
 }
-#zona:hover {
+#logo:hover {
     transform: translateY(-3px) scale(1.75);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
     filter: none;
@@ -66,6 +66,7 @@ header #zona {
     padding: 10px;
     text-decoration: none;
     font-family: 'Menu';
+    font-size: small;
     animation-name: animation_menu;
     animation-duration: 2s;
     margin-top: 15px;
@@ -74,6 +75,9 @@ header #zona {
     cursor: pointer;
   }
   
+.desktopUl{
+  padding: 0;
+}
   .desktopMenu ul:hover a {
   filter: blur(2px);
   }
@@ -246,9 +250,14 @@ justify-content: center;
 animation-name: animation_redes;
 animation-duration: 2s;
 }
+
+#redes ul {
+  padding: 0px;
+  margin: 0px;
+}
 #redes ul li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 10px;
   /* width: 50px; */
   height: 50px;
   text-align: center;
@@ -309,7 +318,7 @@ animation-duration: 2s;
   #menuDesktop{
     display: none;
   }
-  #zona:hover {
+  #mobileLogo:hover {
     transform: translateY(-1px) scale(1.00);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
     filter: none;
@@ -327,12 +336,27 @@ animation-duration: 2s;
     text-transform: uppercase;
     font-weight: 600;
     font-family: "Menu";
-   
   }
 
   .navMenu li a.active, .navMenu li a:hover {
     color: rgb(32, 129, 219);
     transition: .3s;
   }
+  header #mobileLogo {
+    width: 70px;
+    height: 70px;
+    border-radius: 25%;
+    animation-name: animation_menu;
+    animation-duration: 2s;
+  
+}
 
+}
+
+/* STYLE PARA DESKTOP HEADER */
+
+@media screen and (min-width: 992px) {
+  #mobileLogo {
+    display: none;
+  }
 }
