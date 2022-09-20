@@ -6,9 +6,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: var(--background-image);
-    animation-name: animation_background;
-    animation-duration: 1s;
   }
+  
   :root {
     /* --background: #e0e5ec; */
     --background-image: url(../assets/images/fondo.png);
@@ -209,6 +208,7 @@ img {
        background-color: #35e5f1; 
        animation-name: animation_playerBlue;
        animation-duration: 3s; 
+      
      }
      .hide {
        display: none;
