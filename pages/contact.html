@@ -17,18 +17,19 @@
   
 <body>
 
-  <header class="container-fluid text-center">
-    
-    <div class="row align-items-center">
+   <!-- HEADER -->
+   <header class="container-fluid text-center">
+        
+    <div class="row align-items-center" >
       <!-- LOGO -->
-      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
+      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4" id="logoDesktop">
         <a href="../index.html"><img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
-          id="zona"></a>
+          id="logo"></a>
       </div>
       <!-- VACIO -->
-      <div class="col-sm-0 col-md-0 col-lg-2 col-xl-4 col-xxl-4"></div>
+      <div class="col-sm-0 col-md-0 col-lg-2 col-xl-4 col-xxl-4" id="vacioDesktop"></div>
        <!-- HEADER PRINCIPAL -->
-      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4 text-center">
+      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4 text-center" id="menuDesktop">
         <nav class="desktopMenu">
           <ul class="desktopUl">
             <li class="desktopLi"><a href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
@@ -43,20 +44,27 @@
    
 
     <!-- MENU HAMBURGUESA -->
-     <!-- <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="barBtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul class="navMenu">
-        <li><a href="./index.html" id="about">HOME</a></li>
-        <li><a href="./pages/about.html" id="about">ABOUT BLUE.E</a></li>
-        <li><a href="./pages/discography.html" id="disc">DISCOFRAFIA</a></li>
-        <li><a href="./pages/tours.html" id="tours">TOURS</a></li>
-        <li><a href="./pages/contact.html" id="contact">CONTACTO</a></li>
-      </ul>
-    </nav> -->
+    <p>
+      <a class="btn btn-primary bg-transparent border border-light border-success p-2 border-opacity-10" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
+          id="mobileLogo">
+      </a>
+    </p>
+    <div class="collapse" id="collapseMenu">
+      <div class="card card-body text-center">
+        <ul class="navMenu list-group list-group-flush">
+          <li><a class=" list-group-item  border border-light border-success p-2 border-opacity-10" href="../index.html" id="about">HOME</a></li>
+          <li><a class=" list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
+          <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
+          <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/tours.html" id="tours">TOURS</a></li>
+          <li><a class=" active list-group-item  bg-transparent border border-light border-success p-2 border-opacity-10" href="../pages/contact.html" id="contact">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+
   </header>
+
+    <!-- FIN DEL HEADER -->
     <!-- INICIO MAIN -->
     <main id="main">
       <div class="container">
