@@ -301,6 +301,30 @@ img {
   }
   }
 
+  /* ESTILO ABOUT */
+
+  #aboutBlue {
+    font-family: "Menu";
+    animation-name: animation_aboutBlue;
+    animation-duration: 5s;
+  }
+
+  #fotosAbout {
+    animation-name: animation_aboutBlue;
+    animation-duration: 5s;
+  }
+
+  /* ANIMACIONES ABOUT */
+    /* ANIMACIONES DISCOGRAFIA */
+    @keyframes animation_aboutBlue {
+      0% {opacity: 0%;
+      }
+  
+      100% {    opacity: 100%;
+     
+    }
+    }
+
   /* ESTILO DE FOOTER */
 #footer {
     background-color: var(--background);
