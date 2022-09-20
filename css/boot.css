@@ -280,6 +280,26 @@ img {
    
   }
   }
+  /* ESTILOS DISCOGRAFIA */
+
+  #discos {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    animation-name: animation_discos;
+    animation-duration: 5s;
+
+  }
+
+  /* ANIMACIONES DISCOGRAFIA */
+  @keyframes animation_discos {
+    0% {opacity: 0%;
+    }
+
+    100% {    opacity: 100%;
+   
+  }
+  }
 
   /* ESTILO DE FOOTER */
 #footer {
