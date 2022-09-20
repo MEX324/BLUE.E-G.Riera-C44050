@@ -197,12 +197,34 @@ img {
      .blue:hover {
        transition: all 2s ease-in-out;
        transform: rotate(360deg);
-       background-color: #35e5f1;
-       animation-name: animation_playerCont;
-       animation-duration: 8s;
-   
+       background-color: #35e5f1; 
+       animation-name: animation_playerBlue;
+       animation-duration: 3s; 
      }
      .hide {
        display: none;
      }
+     /* ANIMACIONES DEL MAIN */
+
+  @keyframes animation_player {
+    0% {opacity: 0%;
+    }
+
+    100% {    opacity: 100%;
    
+  }
+  }
+  @keyframes animation_playerCont {
+    0% {opacity: 0%; }
+    100% {    opacity: 100%; }
+  
+  } 
+  @keyframes animation_playerBlue {
+    0% {background: var(--background-image); }
+    25% {    background: rgba(64, 224, 208, 0.137); }
+    50% {    background: rgba(64, 224, 208, 0.288); }
+    75% {    background: rgba(64, 224, 208, 0.651); }
+    100% {    background: turquoise; }
+  
+  } 
+
