@@ -45,6 +45,7 @@ header #zona {
     border-radius: 25%;
     animation-name: animation_menu;
     animation-duration: 2s;
+    margin-top: 15px;
 }
 #zona:hover {
     transform: translateY(-3px) scale(1.75);
@@ -67,7 +68,7 @@ header #zona {
     font-family: 'Menu';
     animation-name: animation_menu;
     animation-duration: 2s;
-    /* padding: 15px 0; */
+    margin-top: 15px;
   }
   a{
     cursor: pointer;
