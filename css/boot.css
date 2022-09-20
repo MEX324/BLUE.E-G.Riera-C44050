@@ -37,8 +37,7 @@ body {
 
 header {
     background: var(--background);
-    width: 100%;
-    height: 20vh;
+    height: 10vh;
 }
 header #zona {
     width: 70px;
@@ -105,7 +104,7 @@ header #zona {
 
   /* MAIN */
 
-  main {
+  #main {
     background: var(--background);
 
     height: 80vh;
@@ -116,12 +115,12 @@ img {
   }
 
   .player {
-    width: 60vh;
-     height: 70vh;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
+   /* width: 60vh; */
+     height: 70vh; 
+     display: flex; 
+       flex-direction: column; 
+     align-items: center;
+       justify-content: center; 
        background-image: var(--background);
        background: var(--background-image);
        border-radius: 12px;
@@ -234,15 +233,11 @@ img {
   } 
 
   /* ESTILO DE FOOTER */
-footer {
-    grid-area: footer;
+#footer {
     background-color: var(--background);
-    display: flex;
     height: 10vh;
-    align-items: center;
-  justify-content: center;
 }
-.redes {
+#redes {
   display: flex;
   height: 10vh;
 align-items: center;
@@ -250,14 +245,14 @@ justify-content: center;
 animation-name: animation_redes;
 animation-duration: 2s;
 }
-.redes ul li {
+#redes ul li {
   display: inline-block;
   margin: 0 5px;
-  width: 50px;
+  /* width: 50px; */
   height: 50px;
   text-align: center;
 }
-.redes ul li a {
+#redes ul li a {
   display: block;
   padding: 0 10px;
   background: #333;
@@ -268,28 +263,28 @@ animation-duration: 2s;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
   transition: .2s;
 }
-.redes ul:hover a {
+#redes ul:hover a {
   filter: blur(2px);
 }
-.redes ul li a:hover {
+#redes ul li a:hover {
   transform: translateY(-3px) scale(1.20);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
   filter: none;
 }
-.redes ul li .facebook:hover {
+#redes ul li .facebook:hover {
   background: var(--facebook);
 }
 
-.redes ul li .instagram:hover {
+#redes ul li .instagram:hover {
   background: var(--instagram);
 }
-.redes ul li .spotify:hover {
+#redes ul li .spotify:hover {
   background: var(--spotify);
 }
-.redes ul li .youtube:hover {
+#redes ul li .youtube:hover {
   background: var(--youtube);
 }
-.redes ul li .soundcloud:hover {
+#redes ul li .soundcloud:hover {
   background: var(--soundcloud);
 }
 /* ANIMACION FOOTER */
