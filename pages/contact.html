@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/boot.css">
+    <link rel="stylesheet" href="../css/boot.css">
     <script src="https://kit.fontawesome.com/1d0674b0a8.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
@@ -22,7 +22,7 @@
     <div class="row align-items-center">
       <!-- LOGO -->
       <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
-        <a href="./index.html"><img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
+        <a href="../index.html"><img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
           id="zona"></a>
       </div>
       <!-- VACIO -->
@@ -31,10 +31,10 @@
       <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-4 text-center">
         <nav class="desktopMenu">
           <ul class="desktopUl">
-            <li class="desktopLi"><a href="./pages/about.html" id="about">ABOUT BLUE.E</a></li>
-            <li class="desktopLi"><a href="./pages/discography.html" id="disc">DISCOFRAFIA</a></li>
-            <li class="desktopLi"><a href="./pages/tours.html" id="tours">TOURS</a></li>
-            <li class="desktopLi"><a href="./pages/contact.html" id="contact">CONTACTO</a></li>
+            <li class="desktopLi"><a href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
+            <li class="desktopLi"><a href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
+            <li class="desktopLi"><a href="../pages/tours.html" id="tours">TOURS</a></li>
+            <li class="desktopLi"><a href="../pages/contact.html" id="contact">CONTACTO</a></li>
           </ul>
         </nav>
       </div>
@@ -58,8 +58,19 @@
     </nav> -->
   </header>
     <!-- INICIO MAIN -->
-    <main class="form">
-        <form action="" method="post" class="formulario">
+    <main id="main">
+      <div class="container">
+        <h2>Contactanos</h2>
+        <form action="#">
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+            <input type="email" class="fomr-control" id="email" placeholder="Ingrese email"
+            name="email">
+          </div>
+          <button type="submit" class="btn btn-default">Ingresar</button>
+        </form>
+      </div>
+        <!-- <form action="" method="post" class="formulario">
            <fieldset>
                <legend>Contactanos</legend>
                <div class="textField">
@@ -87,7 +98,7 @@
    
            </fieldset>
    
-        </form>
+        </form> -->
        </main>
 <!-- FIN MAIN  -->
 <!-- INICIO FOOTER -->
