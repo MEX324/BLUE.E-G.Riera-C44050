@@ -44,21 +44,23 @@
    
 
     <!-- MENU HAMBURGUESA -->
-    <p>
-      <a class="btn btn-primary bg-transparent border border-light border-success p-2 border-opacity-10" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseExample">
-        <img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
-          id="mobileLogo">
-      </a>
-    </p>
-    <div class="collapse" id="collapseMenu">
-      <div class="card card-body text-center">
-        <ul class="navMenu list-group list-group-flush">
-          <li><a class=" list-group-item  border border-light border-success p-2 border-opacity-10" href="../index.html" id="about">HOME</a></li>
-          <li><a class=" list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
-          <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
-          <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/tours.html" id="tours">TOURS</a></li>
-          <li><a class=" active list-group-item  bg-transparent border border-light border-success p-2 border-opacity-10" href="../pages/contact.html" id="contact">CONTACTO</a></li>
-        </ul>
+    <div class="z-index-2" id="burguer">
+      <p>
+        <a class="btn btn-primary bg-transparent border border-light border-success p-2 border-opacity-10 z-index-2" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
+            id="mobileLogo">
+        </a>
+      </p>
+      <div class="collapse z-index-2" id="collapseMenu">
+        <div class="card card-body text-center">
+          <ul class="navMenu list-group list-group-flush z-index-2">
+            <li><a class="active list-group-item  bg-transparent border border-light border-success p-2 border-opacity-10" href="../index.html" id="about">HOME</a></li>
+            <li><a class=" list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
+            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
+            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/tours.html" id="tours">TOURS</a></li>
+            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/contact.html" id="contact">CONTACTO</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -66,8 +68,8 @@
 
     <!-- FIN DEL HEADER -->
     <!-- INICIO MAIN -->
-    <main class="d-flex justify-content-center" id="main">
-          <div class="card col-sm-5 p-3  rounded-5 border border-5" style="width: 32rem; height: 32rem;" id="formulario">
+    <main class="d-flex justify-content-center " id="main">
+          <div class="card col-sm-5 p-3  rounded-5 border border-5  z-index-1" style="width: 32rem; height: 32rem;" id="formulario">
             
               <h2>Contactanos</h2>
               <form action="#">
@@ -102,37 +104,6 @@
               </form>
             </div>
       </main>
-     
-        <!-- <form action="" method="post" class="formulario">
-           <fieldset>
-               <legend>Contactanos</legend>
-               <div class="textField">
-                   <label for="Nombre">Ingrese Nombre</label>
-                   <input type="text" id="Nombre" placeholder="Nombre" required>
-               </div>
-               <div class="textField">
-                   <label for="Email">Correo Electronico</label>
-                   <input type="Email" id="Email" placeholder=" example@gmail.com" required>
-               </div>
-               <div class="radioField">
-                   <label for="Prensa">Prensa</label>
-                   <input type="radio" name="Motivo" id="Prensa" value="Prensa">
-                   <label for="Fan">Fan</label>
-                   <input type="radio" name="Motivo" id="Fan" value="Fan">
-                   <label for="Otro">Otro</label>
-                   <input type="radio" name="Motivo" id="Otro" value="Otro">
-               </div>
-               <div>
-                   <textarea name="" id="textArea" ></textarea>
-               </div>
-               <input id="enviar" type="submit" value="Enviar">
-               <input id="reset" type="reset" value="Limpiar">
-   
-   
-           </fieldset>
-   
-        </form> -->
-      
 <!-- FIN MAIN  -->
 <!-- INICIO FOOTER -->
 <footer class="container-fluid text-center" id="footer">

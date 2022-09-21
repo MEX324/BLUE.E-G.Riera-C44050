@@ -94,6 +94,10 @@ header #logo {
   background: var(--contact);
   }
 
+  #collapseMenu{
+    z-index: 2;
+  }
+
 /* ANIMACION HEADER */
 @keyframes animation_menu {
     0%{ transform: translateY(-250px);}
@@ -235,6 +239,7 @@ img {
     background-image: var(--background-image);
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
+    z-index: 1;
   }
 
   /* ANIMACION CONTACTO */
