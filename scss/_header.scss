@@ -5,6 +5,8 @@ header{
         width: 70px;
         height: 70px;
         border-radius: 25%;
+        animation-name: animation_menu;
+        animation-duration: 2s;
         &:hover {
             transform: translateY(-3px) scale(1.75);
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
@@ -16,21 +18,23 @@ header{
         .desktopUl{
             display: flex;
             padding: 0;
-
-            .desktopLi{
-                list-style: none;
-                a{
-                    color: rgb(0, 0, 0);
-                    background-color: #fff;
-                    border: black solid 3px;
-                    border-radius: $borderRadious;
-                    padding: 10px;
-                    text-decoration: none;
-                    font-family: 'Menu';
-                    font-size: small;
-                    
+            animation-name: animation_menu;
+            animation-duration: 2s;
+                .desktopLi{
+                    list-style: none;
+                    a{
+                        color: rgb(0, 0, 0);
+                        background-color: #fff;
+                        border: black solid 3px;
+                        border-radius: $borderRadious;
+                        padding: 10px;
+                        text-decoration: none;
+                        font-family: 'Menu';
+                        font-size: small;                  
+                    }
                 }
-            }
+            
+
         }
     }
     #burguer {
@@ -71,3 +75,30 @@ header{
         }
     }
 }
+
+.desktopMenu ul:hover a {
+    filter: blur(2px);
+    }
+    .desktopMenu ul li a:hover {
+    transform: translateY(-3px) scale(1.20);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+    filter: none;
+    }
+    .desktopMenu ul li #about:hover {
+        background: map-get($colores-menu , "about")
+    }
+     .desktopMenu ul li #disc:hover {
+        background:  map-get($colores-menu , "disc")
+        }
+     .desktopMenu ul li #tours:hover {
+        background:  map-get($colores-menu , "tours")
+        }
+    .desktopMenu ul li #contact:hover {
+        background:  map-get($colores-menu , "contact")
+        }
+
+/* ANIMACION HEADER */
+@keyframes animation_menu {
+    0%{ transform: translateY(-250px);}
+    100% { transform: translateY(0px);}
+  }

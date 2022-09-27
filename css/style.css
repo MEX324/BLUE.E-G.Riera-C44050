@@ -4,14 +4,18 @@ header {
   header #logo {
     width: 70px;
     height: 70px;
-    border-radius: 25%; }
+    border-radius: 25%;
+    animation-name: animation_menu;
+    animation-duration: 2s; }
     header #logo:hover {
       transform: translateY(-3px) scale(1.75);
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
       filter: none; }
   header .desktopMenu .desktopUl {
     display: flex;
-    padding: 0; }
+    padding: 0;
+    animation-name: animation_menu;
+    animation-duration: 2s; }
     header .desktopMenu .desktopUl .desktopLi {
       list-style: none; }
       header .desktopMenu .desktopUl .desktopLi a {
@@ -46,6 +50,33 @@ header {
       header #burguer #collapseMenu .navMenu li a:hover {
         color: #2081db;
         transition: .3s; }
+
+.desktopMenu ul:hover a {
+  filter: blur(2px); }
+
+.desktopMenu ul li a:hover {
+  transform: translateY(-3px) scale(1.2);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+  filter: none; }
+
+.desktopMenu ul li #about:hover {
+  background: #4bff4b; }
+
+.desktopMenu ul li #disc:hover {
+  background: #ff5522; }
+
+.desktopMenu ul li #tours:hover {
+  background: #4bf3ff; }
+
+.desktopMenu ul li #contact:hover {
+  background: #f82fff; }
+
+/* ANIMACION HEADER */
+@keyframes animation_menu {
+  0% {
+    transform: translateY(-250px); }
+  100% {
+    transform: translateY(0px); } }
 
 #footer {
   height: 10vh; }
@@ -133,6 +164,20 @@ header {
         background-color: #35e5f1; }
     #main .player .hide {
       display: none; }
+
+/* STYLE MOBILE Y TABLET PARA HEADER */
+@media screen and (max-width: 991.98px) {
+  #logoDesktop {
+    display: none; }
+  #vacioDesktop {
+    display: none; }
+  #menuDesktop {
+    display: none; } }
+
+/* STYLE PARA DESKTOP HEADER */
+@media screen and (min-width: 992px) {
+  #mobileLogo {
+    display: none; } }
 
 @font-face {
   font-family: "Menu";
