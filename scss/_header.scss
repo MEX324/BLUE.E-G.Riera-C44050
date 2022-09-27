@@ -1,0 +1,36 @@
+header{
+    background: $background ;
+    height: 10vh;
+    #logo{
+        width: 70px;
+        height: 70px;
+        border-radius: 25%;
+        &:hover {
+            transform: translateY(-3px) scale(1.75);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+            filter: none;
+        }
+    }
+    .desktopMenu{
+       
+        .desktopUl{
+            display: flex;
+            padding: 0;
+
+            .desktopLi{
+                list-style: none;
+                a{
+                    color: rgb(0, 0, 0);
+                    background-color: #fff;
+                    border: black solid 3px;
+                    border-radius: 12%;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-family: 'Menu';
+                    font-size: small;
+                    
+                }
+            }
+        }
+    }
+}
