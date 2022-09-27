@@ -52,6 +52,47 @@
         }
         .hide {      display: none;}
     }
+    #formulario {
+        font-family: "Menu";
+        border-radius:($borderRadious/2);
+        box-shadow: $borderShadow;
+        animation-name: animation_player;
+        animation-duration: 5s;
+        background-image: $background ;
+    }
+    .titTours {
+        font-family: 'Menu';
+        font-size: 3em;
+        animation-name: animation_player;
+        animation-duration: 5s;
+    }
+    #toursTable {
+        font-family: 'Menu';
+        font-size: large;
+        border-radius:($borderRadious/2);
+        box-shadow: $borderShadow;
+        animation-name: animation_player;
+        animation-duration: 5s;
+    
+
+    }
+    #aboutBlue {
+        font-family: "Menu";
+        animation-name: animation_player;
+        animation-duration: 5s;
+      }
+      #fotosAbout {
+        animation-name: animation_player;
+        animation-duration: 5s;
+      }
+      #discos {
+        border-radius:($borderRadious/2);
+        box-shadow: $borderShadow;
+        animation-name: animation_player;
+        animation-duration: 5s;
+    
+      }
+    
 }
      /* ANIMACIONES DEL MAIN */
      @keyframes animation_player {

@@ -189,6 +189,37 @@ header {
         background-color: #35e5f1; }
     #main .player .hide {
       display: none; }
+  #main #formulario {
+    font-family: "Menu";
+    border-radius: 10%;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_player;
+    animation-duration: 5s;
+    background-image: url(../assets/images/fondo.png); }
+  #main .titTours {
+    font-family: 'Menu';
+    font-size: 3em;
+    animation-name: animation_player;
+    animation-duration: 5s; }
+  #main #toursTable {
+    font-family: 'Menu';
+    font-size: large;
+    border-radius: 10%;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_player;
+    animation-duration: 5s; }
+  #main #aboutBlue {
+    font-family: "Menu";
+    animation-name: animation_player;
+    animation-duration: 5s; }
+  #main #fotosAbout {
+    animation-name: animation_player;
+    animation-duration: 5s; }
+  #main #discos {
+    border-radius: 10%;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_player;
+    animation-duration: 5s; }
 
 /* ANIMACIONES DEL MAIN */
 @keyframes animation_player {
