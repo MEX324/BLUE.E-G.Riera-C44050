@@ -26,7 +26,8 @@ header {
         padding: 10px;
         text-decoration: none;
         font-family: 'Menu';
-        font-size: small; }
+        font-size: small;
+        transition: .2s; }
   header #burguer p a #mobileLogo {
     width: 70px;
     height: 70px;
@@ -84,7 +85,9 @@ header {
     display: flex;
     height: 10vh;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    animation-name: animation_redes;
+    animation-duration: 2s; }
     #footer #footerCont #redes {
       padding: 0px;
       margin: 0px; }
@@ -109,6 +112,26 @@ header {
             transform: translateY(-3px) scale(1.2);
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
             filter: none; }
+        #footer #footerCont #redes li .facebook:hover {
+          background: #3b5999; }
+        #footer #footerCont #redes li .instagram:hover {
+          background: #d63369; }
+        #footer #footerCont #redes li .spotify:hover {
+          background: #00b627; }
+        #footer #footerCont #redes li .youtube:hover {
+          background: #f12400; }
+        #footer #footerCont #redes li .soundcloud:hover {
+          background: #fc7a00; }
+
+#footerCont ul:hover a {
+  filter: blur(2px); }
+
+/* ANIMACION FOOTER */
+@keyframes animation_redes {
+  0% {
+    transform: translateY(250px); }
+  100% {
+    transform: translateY(0px); } }
 
 #main {
   height: 80vh; }

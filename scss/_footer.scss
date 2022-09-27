@@ -4,6 +4,8 @@
         height: 10vh;
       align-items: center;
       justify-content: center;
+      animation-name: animation_redes;
+        animation-duration: 2s;
         #redes{
             padding: 0px;
             margin: 0px;
@@ -27,10 +29,34 @@
                         box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
                         filter: none;
                 }
-            }  
+            } 
+            .facebook:hover {
+                background: map-get($colores-redesMenu , "facebook" ),
+              }
+              .instagram:hover {
+                background: map-get($colores-redesMenu , "instagram" ),
+              }
+              .spotify:hover {
+                background: map-get($colores-redesMenu , "spotify" ),
+              }
+             .youtube:hover {
+                background: map-get($colores-redesMenu , "youtube" ),
+              }
+             .soundcloud:hover {
+                background: map-get($colores-redesMenu , "soundcloud" ),
+              }
         }
  
     }
 }
 }
-   
+#footerCont ul:hover a {
+    filter: blur(2px);
+  }
+
+  /* ANIMACION FOOTER */
+  
+  @keyframes animation_redes {
+    0%{ transform: translateY(250px);}
+    100% { transform: translateY(0px);}
+  }
