@@ -142,7 +142,9 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5); }
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-name: animation_player;
+    animation-duration: 5s; }
     #main .player .playerAlbum {
       width: 30vh; }
       #main .player .playerAlbum .playerImg {
@@ -187,6 +189,13 @@ header {
         background-color: #35e5f1; }
     #main .player .hide {
       display: none; }
+
+/* ANIMACIONES DEL MAIN */
+@keyframes animation_player {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 
 /* STYLE MOBILE Y TABLET PARA HEADER */
 @media screen and (max-width: 991.98px) {

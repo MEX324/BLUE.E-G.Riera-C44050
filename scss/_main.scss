@@ -8,6 +8,8 @@
         justify-content: center; 
         border-radius:($borderRadious/2);
         box-shadow: $borderShadow;
+        animation-name: animation_player;
+        animation-duration: 5s;
         .playerAlbum {
             width: 30vh;
             .playerImg{border-radius: $borderRadious;
@@ -51,3 +53,12 @@
         .hide {      display: none;}
     }
 }
+     /* ANIMACIONES DEL MAIN */
+     @keyframes animation_player {
+        0% {opacity: 0%;
+        }
+    
+        100% {    opacity: 100%;
+       
+      }
+    }
