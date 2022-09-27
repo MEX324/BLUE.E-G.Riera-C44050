@@ -219,7 +219,7 @@ header {
     border-radius: 10%;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
     animation-name: animation_player;
-    animation-duration: 5s; }
+    animation-duration: 4s; }
 
 /* ANIMACIONES DEL MAIN */
 @keyframes animation_player {
