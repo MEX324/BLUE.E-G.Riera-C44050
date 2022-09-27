@@ -24,13 +24,10 @@ body {
     --contact: rgb(248, 47, 255);
   }
   /* FONTS */
-
 @font-face {
     font-family: "Menu";
     src: url(../assets/fonts/Insanibc.ttf);}
-  
-  
-  
+ 
 
 /* ESTILO DE HEADER */
 header {
@@ -93,7 +90,6 @@ header #logo {
   .desktopMenu ul li #contact:hover {
   background: var(--contact);
   }
-
   #collapseMenu{
     z-index: 2;
   }
@@ -104,7 +100,6 @@ header #logo {
     100% { transform: translateY(0px);}
   }
   /* MAIN */
-
   #main {
     background: var(--background);
 
@@ -206,7 +201,6 @@ img {
        display: none;
      }
      /* ANIMACIONES DEL MAIN */
-
   @keyframes animation_player {
     0% {opacity: 0%;
     }
@@ -229,9 +223,7 @@ img {
   
   } 
 
-
   /* STILE CONTACTO */
-
   #formulario {
     font-family: "Menu";
     animation-name: animation_formulario;
@@ -243,8 +235,6 @@ img {
   }
 
   /* ANIMACION CONTACTO */
-
-  
   @keyframes animation_formulario {
     0% {opacity: 0%;
     }
@@ -307,20 +297,17 @@ img {
   }
 
   /* ESTILO ABOUT */
-
   #aboutBlue {
     font-family: "Menu";
     animation-name: animation_aboutBlue;
     animation-duration: 5s;
   }
-
   #fotosAbout {
     animation-name: animation_aboutBlue;
     animation-duration: 5s;
   }
 
   /* ANIMACIONES ABOUT */
-    /* ANIMACIONES DISCOGRAFIA */
     @keyframes animation_aboutBlue {
       0% {opacity: 0%;
       }
