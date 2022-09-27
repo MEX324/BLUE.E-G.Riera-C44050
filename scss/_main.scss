@@ -1,0 +1,53 @@
+#main{
+    height: 80vh;
+    .player{
+        height: 70vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        border-radius:($borderRadious/2);
+        box-shadow: $borderShadow;
+        .playerAlbum {
+            width: 30vh;
+            .playerImg{border-radius: $borderRadious;
+                max-width: 100%;
+                transition: transform 5s;
+                border: #333 solid;
+                box-shadow: $borderShadow;}
+        }
+        .playerArtist{       font-size: 2.5em;
+            font-family: "Menu";
+            font-weight: 500;
+            margin: 20px;
+           }
+        .playerSong {       width: 100%;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: "Menu";
+            font-weight: 300;
+            margin: 0;}
+        .playerAudio {       visibility: hidden;}
+        .playerBtn--Medium {       min-height: 70px;
+            min-width: 70px;}
+        .playerBtn {       cursor: pointer;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+            box-shadow: $borderShadow;
+            color: var(--gray);}
+        .blue{       background: var(--background-image);
+            color: #fff;
+            &:hover {
+                transition: all 2s ease-in-out;
+                transform: rotate(360deg);
+                background-color: #35e5f1; 
+
+            }
+        }
+        .hide {      display: none;}
+    }
+}

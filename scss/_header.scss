@@ -23,12 +23,49 @@ header{
                     color: rgb(0, 0, 0);
                     background-color: #fff;
                     border: black solid 3px;
-                    border-radius: 12%;
+                    border-radius: $borderRadious;
                     padding: 10px;
                     text-decoration: none;
                     font-family: 'Menu';
                     font-size: small;
                     
+                }
+            }
+        }
+    }
+    #burguer {
+        p {
+            a{
+                #mobileLogo{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: $borderRadious;
+                    &:hover {
+                        transform: translateY(-1px) scale(1.00);
+                        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+                        filter: none;
+                    }
+                }
+            }
+        }
+        #collapseMenu {
+            .navMenu{
+                li {    
+                    list-style: none;
+                    line-height: 20px;
+                    margin: 50px 0;
+                    transition: all .5s;
+                    height: 20px;
+                    a {    color: rgb(0, 0, 0);
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: "Menu";
+                        &:hover {
+                            color: rgb(32, 129, 219);
+                            transition: .3s;
+                        }
+                    }
                 }
             }
         }
