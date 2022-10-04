@@ -8,9 +8,11 @@ header {
     animation-name: animation_menu;
     animation-duration: 2s; }
     header #logo:hover {
-      transform: translateY(-3px) scale(1.75);
+      filter: blur(2px);
+      transform: translateY(-3px) scale(1.2);
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
-      filter: none; }
+      filter: none;
+      transition: .5s; }
   header .desktopMenu .desktopUl {
     display: flex;
     padding: 0;
@@ -105,13 +107,13 @@ header {
           line-height: 50px;
           width: 50px;
           font-size: 1.5em;
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
-          transition: .2s; }
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6); }
           #footer #footerCont #redes li a:hover {
             filter: blur(2px);
             transform: translateY(-3px) scale(1.2);
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
-            filter: none; }
+            filter: none;
+            transition: .5s; }
         #footer #footerCont #redes li .facebook:hover {
           background: #3b5999; }
         #footer #footerCont #redes li .instagram:hover {
