@@ -18,19 +18,19 @@
                 border: #333 solid;
                 box-shadow: $borderShadow;}
         }
-        .playerArtist{       font-size: 2.5em;
-            font-family: "Menu";
-            font-weight: 500;
+          .playerArtist{     
+            @include titulos;
             margin: 20px;
            }
-        .playerSong {       width: 100%;
-            font-size: 1.5em;
+        .playerSong {       
+            @include subtitulos;
+            width: 100%;
             text-align: center;
-            font-family: "Menu";
-            font-weight: 300;
             margin: 0;}
         .playerAudio {       visibility: hidden;}
-        .playerBtn--Medium {       min-height: 70px;
+        .playerBtn--Medium {     
+            @extend .playerBtn;
+            min-height: 70px;
             min-width: 70px;}
         .playerBtn {       cursor: pointer;
             height: 50px;
@@ -61,14 +61,12 @@
         background-image: $background ;
     }
     .titTours {
-        font-family: 'Menu';
-        font-size: 3em;
+        @include titulos;
         animation-name: animation_player;
         animation-duration: 5s;
     }
     #toursTable {
-        font-family: 'Menu';
-        font-size: large;
+        @include subtitulos;
         border-radius:($borderRadious/2);
         box-shadow: $borderShadow;
         animation-name: animation_player;
@@ -77,7 +75,7 @@
 
     }
     #aboutBlue {
-        font-family: "Menu";
+        @include subtitulos;
         animation-name: animation_player;
         animation-duration: 5s;
       }
