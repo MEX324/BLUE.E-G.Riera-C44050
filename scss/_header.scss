@@ -42,16 +42,20 @@ header{
             a{
                 #mobileLogo{
                    @include logo;
+                           animation-name: animation_menu;
+                            animation-duration: 2s;
                     &:hover {
                         transform: translateY(-1px) scale(1.00);
                         box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
                         filter: none;
+                        transition:.5s;
                     }
                 }
             }
         }
-        #collapseMenu {
-            .navMenu{
+        #offcanvasDarkNavbar {
+            background: $background;
+            #navMenu{
                 li {    
                     list-style: none;
                     line-height: 20px;

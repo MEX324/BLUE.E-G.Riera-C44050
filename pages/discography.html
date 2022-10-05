@@ -47,19 +47,24 @@
     <!-- MENU HAMBURGUESA -->
     <div id="burguer">
       <p>
-        <a class="btn btn-primary bg-transparent border border-light border-success p-2 border-opacity-10" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseExample">
-          <img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo"
-            id="mobileLogo">
+        <a class="btn btn-primary bg-transparent border border-light border-success p-2 border-opacity-10" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <img src="../assets/images/Crema con Cassette Cinta Música Logotipo.png" alt="logo" id="mobileLogo">
         </a>
       </p>
-      <div class="collapse" id="collapseMenu">
-        <div class="card card-body text-center">
-          <ul class="navMenu list-group list-group-flush">
-            <li><a class="active list-group-item  bg-transparent border border-light border-success p-2 border-opacity-10" href="../index.html" id="about">HOME</a></li>
-            <li><a class=" list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
-            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
-            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/tours.html" id="tours">TOURS</a></li>
-            <li><a class="list-group-item border border-light border-success p-2 border-opacity-10" href="../pages/contact.html" id="contact">CONTACTO</a></li>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navMenu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html" id="about">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html" id="about">ABOUT BLUE.E</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/discography.html" id="disc">DISCOFRAFIA</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/tours.html" id="tours">TOURS</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html" id="contact">CONTACTO</a></li>
           </ul>
         </div>
       </div>
