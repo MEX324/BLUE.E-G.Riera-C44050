@@ -1,8 +1,10 @@
 #main{
     height: 80vh;
     .player{
+        
         height: 70vh; 
-        display: flex; 
+        display: flex;
+        margin-top: 20px; 
         flex-direction: column; 
         align-items: center;
         justify-content: center; 
@@ -58,6 +60,7 @@
         box-shadow: $borderShadow;
         animation-name: animation_player;
         animation-duration: 5s;
+        margin-top: 20px;
         background-image: $background ;
     }
     .titTours {
