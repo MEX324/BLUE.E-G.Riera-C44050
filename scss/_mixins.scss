@@ -15,3 +15,48 @@
         border-radius: 20%;
       }
       
+@mixin query ($vista) {
+        tbody{
+                tr{
+                        th , td{
+                                @if $vista == desktop {
+                                        @media only screen and (min-width: 1400px){
+                                               
+                                                font-weight: 400;
+                                                font-size: 1.5em;
+                
+                                        }
+                                        
+                                }
+                                @else if $vista == laptop {
+                                        @media only screen and (max-width: 1399.98px){
+                                               
+                                                font-weight: 400;
+                                                font-size: 1em;
+                                        }
+                
+                                        }
+                                @else if $vista == tablet {
+                                        @media only screen and (max-width: 1199.98px){
+                                               
+                                                font-weight: 300;
+                                                font-size: .8em;
+                
+                                        }
+                                        
+                                }
+                                @else if $vista == mobile {
+                                        @media only screen and (max-width: 767.98px){
+                                               
+                                                font-weight: 300;
+                                                font-size: .55em;
+                
+                                        }
+                                        
+                                }
+                        }
+                        
+                }
+                
+        }
+}
