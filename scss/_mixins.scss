@@ -78,6 +78,15 @@
                                 }
                                 
                         }
+                        @else if $vista == tablet {
+                                @media only screen and (max-width: 500px){
+                                       
+                                        font-weight: 300;
+                                        font-size: .20em;
+        
+                                }
+                                
+                        }
                                 
                         }
                 }
