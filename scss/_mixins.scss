@@ -51,6 +51,38 @@
                 }
         }
         main{
+                #aboutBlue{
+                        p { @if $vista == desktop {
+                                @media only screen and (min-width: 1400px){
+                                       
+                                        font-weight: 300;
+                                        font-size: .9em;
+        
+                                }
+                                
+                        }
+                        @else if $vista == laptop {
+                                @media only screen and (max-width: 1399.98px){
+                                       
+                                        font-weight: 400;
+                                        font-size: .8em;
+                                }
+        
+                                }
+                        @else if $vista == tablet {
+                                @media only screen and (max-width: 1199.98px){
+                                       
+                                        font-weight: 300;
+                                        font-size: .55em;
+        
+                                }
+                                
+                        }
+                                
+                        }
+                }
+                        
+                
                 #discos{
 
                          #carouselIndicators{
@@ -71,7 +103,8 @@
                                  }
                          }
                  }
-        }
+                }     
+        
         tbody{
                 tr{
                         th , td{
