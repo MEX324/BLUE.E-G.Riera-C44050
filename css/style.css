@@ -4,12 +4,13 @@ header {
   header #logo {
     width: 70px;
     height: 70px;
+    padding: 0;
     border-radius: 20%;
     animation-name: animation_menu;
     animation-duration: 2s; }
     header #logo:hover {
       transform: translateY(-3px) scale(1.2);
-      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+      box-shadow: 0 rgba(0, 0, 0, 0.9);
       filter: none;
       transition: .5s; }
   header .desktopMenu .desktopUl {
@@ -18,20 +19,34 @@ header {
     animation-name: animation_menu;
     animation-duration: 2s; }
     header .desktopMenu .desktopUl .desktopLi {
-      list-style: none; }
+      list-style: none;
+      margin: 5px; }
+      header .desktopMenu .desktopUl .desktopLi:hover {
+        transform: translateY(-3px) scale(1.2);
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+        transition: .5s; }
       header .desktopMenu .desktopUl .desktopLi a {
-        color: black;
-        background-color: #fff;
-        border: black solid 3px;
-        border-radius: 20%;
+        background: #333;
+        color: #fff;
         padding: 10px;
         text-decoration: none;
         font-family: 'Menu';
         font-size: small;
-        transition: .5s; }
+        transition: .5s;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+        border-radius: 5px; }
+        header .desktopMenu .desktopUl .desktopLi a:hover {
+          color: #333;
+          background: url(../assets/images/fondo.png);
+          filter: blur(2px);
+          transform: translateY(-8px) scale(1.2);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+          filter: none;
+          transition: .7s; }
   header #burguer p a #mobileLogo {
     width: 70px;
     height: 70px;
+    padding: 0;
     border-radius: 20%;
     animation-name: animation_menu;
     animation-duration: 2s; }
@@ -60,24 +75,6 @@ header {
 
 .desktopMenu ul:hover a {
   filter: blur(2px); }
-
-.desktopMenu ul li a:hover {
-  transform: translateY(-3px) scale(1.2);
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
-  filter: none;
-  transition: .5s; }
-
-.desktopMenu ul li #about:hover {
-  background: #4bff4b; }
-
-.desktopMenu ul li #disc:hover {
-  background: #ff5522; }
-
-.desktopMenu ul li #tours:hover {
-  background: #4bf3ff; }
-
-.desktopMenu ul li #contact:hover {
-  background: #f82fff; }
 
 /* ANIMACION HEADER */
 @keyframes animation_menu {
@@ -111,7 +108,8 @@ header {
           line-height: 50px;
           width: 50px;
           font-size: 1.5em;
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6); }
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+          border-radius: 13%; }
           #footer #footerCont #redes li a:hover {
             filter: blur(2px);
             transform: translateY(-3px) scale(1.2);
@@ -140,7 +138,9 @@ header {
     transform: translateY(0px); } }
 
 #main {
-  height: 80vh; }
+  height: 80vh;
+  animation-name: animation_player;
+  animation-duration: 5s; }
   #main .player {
     height: 70vh;
     display: flex;
@@ -149,7 +149,7 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
     animation-name: animation_player;
     animation-duration: 5s; }
     #main .player .playerAlbum {
@@ -158,8 +158,7 @@ header {
         border-radius: 20%;
         max-width: 100%;
         transition: transform 5s;
-        border: #333 solid;
-        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5); }
+        box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39); }
     #main .player .playerArtist {
       font-family: "Menu";
       font-weight: 500;
@@ -185,7 +184,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+      box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
       color: var(--gray); }
     #main .player .blue {
       background: var(--background-image);
@@ -193,31 +192,111 @@ header {
       #main .player .blue:hover {
         transition: all 2s ease-in-out;
         transform: rotate(360deg);
-        background-color: #35e5f1; }
+        background-color: #22cbff;
+        box-shadow: 9px 9px 16px rgba(255, 255, 255, 0.39), -9px -9px 16px rgba(255, 255, 255, 0.39); }
     #main .player .hide {
       display: none; }
   #main #formulario {
     font-family: "Menu";
     border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
     animation-name: animation_player;
     animation-duration: 5s;
     margin-top: 20px;
     background-image: url(../assets/images/fondo.png); }
-  #main .titTours {
-    font-family: "Menu";
-    font-weight: 500;
-    font-size: 2.5em;
+  #main .fcTitle {
     animation-name: animation_player;
-    animation-duration: 5s; }
-  #main #toursTable {
-    font-family: "Menu";
-    font-weight: 400;
-    font-size: 1.5em;
-    border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    animation-duration: 5s;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1328px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 50px; }
+    #main .fcTitle h2 {
+      font-family: "Menu";
+      color: #1d1d1b;
+      font-size: 2.6rem;
+      letter-spacing: 0;
+      text-align: center; }
+  #main .fc_tours {
     animation-name: animation_player;
-    animation-duration: 5s; }
+    animation-duration: 5s;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1328px;
+    padding-left: 24px;
+    padding-right: 24px; }
+    #main .fc_tours .tour-date-list {
+      position: relative;
+      min-height: 50vh;
+      font-family: "Menu";
+      letter-spacing: 0; }
+      #main .fc_tours .tour-date-list .tour-date {
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        font-weight: 300; }
+        #main .fc_tours .tour-date-list .tour-date .tour-date__info {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          border-bottom: 4px solid #1d1d1b;
+          margin-right: 5px;
+          padding-bottom: 12px; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__dates {
+            min-width: 25%;
+            margin-bottom: 0; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__venue {
+            min-width: 25%;
+            margin-bottom: 0; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__location {
+            min-width: 50%;
+            margin-bottom: 0; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__link {
+            min-width: 125px; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .button {
+            background-color: transparent;
+            font-weight: 300;
+            text-align: center;
+            line-height: 2.4rem;
+            padding: 0.1rem 1rem;
+            max-width: 22.4rem;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .button:hover {
+            background-color: #333; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info a:hover {
+            color: #fff; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .button--black {
+            border: 4px solid #1d1d1b;
+            color: #1d1d1b;
+            transition: all ease-in .25s; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .button--small {
+            font-size: 1.6rem;
+            padding: 0.4rem 0.8rem;
+            white-space: nowrap; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__location .label {
+            font-size: 25px !important;
+            line-height: 1;
+            color: #1d1d1b;
+            text-align: left; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__dates .label {
+            font-size: 20px !important;
+            line-height: 1;
+            color: #1d1d1b;
+            text-align: left; }
+          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__venue .label {
+            font-size: 25px !important;
+            line-height: 1;
+            color: #1d1d1b;
+            text-align: left; }
+  #main .tour-date-list {
+    position: relative;
+    min-height: 50vh; }
   #main #aboutBlue {
     font-family: "Menu";
     font-weight: 400;
@@ -229,7 +308,7 @@ header {
     animation-duration: 5s; }
   #main #discos {
     border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
     animation-name: animation_player;
     animation-duration: 4s; }
 
