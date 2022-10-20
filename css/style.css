@@ -138,9 +138,7 @@ header {
     transform: translateY(0px); } }
 
 #main {
-  height: 80vh;
-  animation-name: animation_player;
-  animation-duration: 5s; }
+  height: 80vh; }
   #main .player {
     height: 70vh;
     display: flex;
@@ -198,12 +196,22 @@ header {
       display: none; }
   #main #formulario {
     font-family: "Menu";
+    letter-spacing: 2px;
     border-radius: 10%;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
     animation-name: animation_player;
     animation-duration: 5s;
     margin-top: 20px;
     background-image: url(../assets/images/fondo.png); }
+    #main #formulario .btn {
+      background-color: transparent;
+      color: #333;
+      border: solid 2px #333;
+      letter-spacing: 2px;
+      transition: 0.8s ease; }
+    #main #formulario .btn:hover {
+      background-color: #22e5ffea;
+      color: #fff; }
   #main .fcTitle {
     animation-name: animation_player;
     animation-duration: 5s;
@@ -268,7 +276,7 @@ header {
             display: inline-block;
             cursor: pointer; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .button:hover {
-            background-color: #333; }
+            background-color: #22e5ffea; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info a:hover {
             color: #fff; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .button--black {
@@ -306,11 +314,102 @@ header {
   #main #fotosAbout {
     animation-name: animation_player;
     animation-duration: 5s; }
-  #main #discos {
-    border-radius: 10%;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
+  #main .slide-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1120px;
+    width: 80%;
+    padding: 40px 0;
     animation-name: animation_player;
-    animation-duration: 4s; }
+    animation-duration: 5s; }
+  #main .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 60px; }
+  #main .swiper-navBtn {
+    color: #333;
+    transition: color 0.3s ease; }
+  #main .swiper-navBtn:hover {
+    color: #4070F4; }
+  #main .swiper-navBtn::before,
+  #main .swiper-navBtn::after {
+    font-size: 45px;
+    font-weight: 800; }
+  #main .swiper-button-next {
+    right: 0; }
+  #main .swiper-button-prev {
+    left: 0; }
+  #main .swiper-pagination-bullet {
+    background-color: #6E93f7;
+    opacity: 1; }
+  #main .swiper-pagination-bullet-active {
+    background-color: #4070F4; }
+  @media screen and (max-width: 768px) {
+    #main .slide-content {
+      margin: 0 10px; }
+    #main .swiper-navBtn {
+      display: none; } }
+  #main .card {
+    width: 300px;
+    height: 350px;
+    background-color: transparent;
+    border-color: transparent; }
+  #main .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 2s; }
+  #main .card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39); }
+    #main .card .front img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #main .card .front h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      line-height: 45px;
+      color: white;
+      background: rgba(0, 0, 0, 0.39);
+      text-align: center; }
+  #main .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; }
+    #main .card .back h3 {
+      font-family: "Menu";
+      color: #1d1d1b;
+      font-size: 2rem;
+      letter-spacing: 2px; }
+    #main .card .back p {
+      font-family: "Menu";
+      color: #1d1d1b;
+      font-size: .7rem;
+      letter-spacing: 2px; }
+    #main .card .back .link {
+      border-top: solid 1px;
+      height: 50px;
+      line-height: 50px; }
+      #main .card .back .link a {
+        color: #333; }
+  #main .card:hover .front {
+    transform: perspective(600px) rotateY(180deg); }
+  #main .card:hover .back {
+    transform: perspective(600px) rotateY(360deg); }
 
 /* ANIMACIONES DEL MAIN */
 @keyframes animation_player {

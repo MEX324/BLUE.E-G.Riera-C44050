@@ -57,12 +57,25 @@
     }
     #formulario {
         font-family: "Menu";
+        letter-spacing: 2px;
         border-radius:($borderRadious/2);
         box-shadow: $borderShadow;
         animation-name: animation_player;
         animation-duration: 5s;
         margin-top: 20px;
         background-image: $background ;
+        .btn {
+            background-color: transparent;
+            color: #333;
+            border: solid 2px #333;
+            letter-spacing: 2px;
+            transition: 0.8s ease;
+
+        }
+        .btn:hover {
+            background-color: #22e5ffea;
+            color: #fff;
+        }
     }
 
     .fcTitle {
@@ -141,7 +154,7 @@
                     }
 
                     .button:hover {
-                        background-color: #333;
+                        background-color:  #22e5ffea;
                     }
                     a {
                         &:hover {
@@ -183,21 +196,7 @@
             }
         }
     }
-    // .titTours {
-    //     @include titulos;
-    //     animation-name: animation_player;
-    //     animation-duration: 5s;
-    // }
-    // #toursTable {
-    //     @include subtitulos;
-    //     border-radius:($borderRadious/2);
-    //     box-shadow: $borderShadow;
-        animation-name: animation_player;
-     animation-duration: 5s;
     
-
-    // }
-
     .tour-date-list {
         position: relative;
         min-height: 50vh;
@@ -212,14 +211,144 @@
         animation-name: animation_player;
         animation-duration: 5s;
       }
-      #discos {
-        border-radius:($borderRadious/2);
-        box-shadow: $borderShadow;
-        animation-name: animation_player;
-        animation-duration: 4s;
-    
+
+
+
+
+
+    //   DISCOGRAFIA
+
+
+
+.slide-container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  max-width: 1120px;
+  width: 80%;
+  padding: 40px 0;
+  animation-name: animation_player;
+  animation-duration: 5s;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  padding: 60px;
+}
+
+
+.swiper-navBtn{
+  color: #333;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 45px;
+  font-weight: 800;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+     .card {
+         width: 300px;
+         height: 350px;
+         background-color: transparent;      
+         border-color: transparent; 
+     }
+    .card .face {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+         backface-visibility: hidden;
+         overflow: hidden;
+         transition: 2s;
+        
+     }
+     .card .front {
+         transform: perspective(600px) rotateY(0deg);
+         box-shadow: $borderShadow;
+        img {
+             position: absolute;
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
       }
-    
+        h3 {
+             position: absolute;
+             bottom: 0;
+            width: 100%;
+             height: 50px;
+             line-height: 45px;
+             color: white;           background:rgba(0, 0, 0, 0.39);
+         text-align: center;
+         }
+     }
+     .card .back {
+         transform: perspective(600px) rotateY(180deg);
+        box-shadow: $borderShadow;
+         padding: 15px;
+         display: flex;         flex-direction: column;
+        justify-content: space-between;
+         text-align: center;
+        h3{
+             font-family: "Menu";
+             color: #1d1d1b;
+            font-size: 2rem;
+             letter-spacing: 2px;
+         }
+         p {
+             font-family: "Menu";
+             color: #1d1d1b;
+             font-size: .7rem;
+             letter-spacing: 2px;
+        }
+        .link {
+             border-top: solid 1px;
+             height: 50px;
+             line-height: 50px;
+             a {
+                 color: #333;
+            }        }
+     }
+     .card:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+     }
+     .card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+     }
 }
      /* ANIMACIONES DEL MAIN */
      @keyframes animation_player {
