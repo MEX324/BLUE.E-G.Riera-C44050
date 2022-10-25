@@ -50,7 +50,7 @@
         // MAIN
         main {
                 // TOURS
-                .fc_tours {
+                .fc-tours {
                         .tour-date-list {
                                 .tour-date {
                                         .tour-date__info {
@@ -69,13 +69,10 @@
                 // ABOUT
                 #aboutBlue {
                         h1 {
-                                @if $vista ==mobile {
+                                @if $vista ==pro {
                                         @media only screen and (max-width: 390px) {
                                                 font-size: 1.5em;
                                         }
-                                }
-                                @else if $vista ==pro {
-                                        @media only screen and (min-width: 390px) {}
                                 }
                         }
                         p {
@@ -103,18 +100,14 @@
                                                 font-size: .10em;
                                         }
                                 }
-                                @else if $vista ==mobile {
-                                        @media only screen and (max-width: 360px) {
-                                                font-weight: 300;
-                                                font-size: .4em;
-                                        }
-                                }
                                 @else if $vista ==pro {
                                         @media only screen and (max-width: 390px) {
                                                 font-weight: 300;
-                                                font-size: .5em;
+                                                font-size: .41em;
                                         }
                                 }
+
+                                
                         }
                 }
                 #fotosAbout {
@@ -144,8 +137,8 @@
                         }
                         @else if $vista ==mobile {
                                 @media only screen and (max-width: 360px) {
-                                        width: 20rem;
-                                        height: 13rem;
+                                        width: 17rem;
+                                        height: 10.5rem;
                                 }
                         }
                         @else if $vista ==pro {
@@ -163,16 +156,15 @@
                                 li {
                                         text-align: center;
                                         justify-content: center;
-                                        a {
-                                                @if $vista ==mobile {
-                                                        @media only screen and (max-width: 360px) {
-                                                                padding: 0px;
-                                                                line-height: 30px;
-                                                                width: 30px;
-                                                                font-size: 1em;
-                                                        }
+                                        @if $vista ==mobile {
+                                                @media only screen and (max-width: 350px) {
+
+                                                        margin: 5px;
+                                                        height: 6px;
                                                 }
-                                                @else if $vista ==pro {
+                                        }
+                                        a {
+                                                @if $vista ==pro {
                                                         @media only screen and (max-width: 390px) {
                                                                 padding: 0 10px;
                                                                 line-height: 40px;
