@@ -1,64 +1,76 @@
-#main{
+#main {
     height: 80vh;
-    .player{
-        
-        height: 70vh; 
+    // INDEX
+    .player {
+        height: 70vh;
         display: flex;
-        margin-top: 20px; 
-        flex-direction: column; 
+        margin-top: 20px;
+        flex-direction: column;
         align-items: center;
-        justify-content: center; 
-        border-radius:($borderRadious/2);
+        justify-content: center;
+        border-radius: ($borderRadious/2);
         box-shadow: $borderShadow;
         animation-name: animation_player;
         animation-duration: 5s;
         .playerAlbum {
             width: 30vh;
-            .playerImg{border-radius: $borderRadious;
+            .playerImg {
+                border-radius: $borderRadious;
                 max-width: 100%;
                 transition: transform 5s;
-                box-shadow: $borderShadow;}
+                box-shadow: $borderShadow;
+            }
         }
-          .playerArtist{     
+        .playerArtist {
             @include titulos;
             margin: 20px;
-           }
-        .playerSong {       
+        }
+        .playerSong {
             @include subtitulos;
             width: 100%;
             text-align: center;
-            margin: 0;}
-        .playerAudio {       visibility: hidden;}
-        .playerBtn--Medium {     
+            margin: 0;
+        }
+        .playerAudio {
+            visibility: hidden;
+        }
+        .playerBtn--Medium {
             @extend .playerBtn;
             min-height: 70px;
-            min-width: 70px;}
-        .playerBtn {       cursor: pointer;
+            min-width: 70px;
+        }
+        .playerBtn {
+            cursor: pointer;
             height: 50px;
             width: 50px;
             border-radius: 50%;
             display: flex;
-           align-items: center;
-           justify-content: center;
+            align-items: center;
+            justify-content: center;
             box-shadow: $borderShadow;
-            color: var(--gray);}
-        .blue{       background: var(--background-image);
+            color: var(--gray);
+        }
+        .blue {
+            background: var(--background-image);
             color: #fff;
             &:hover {
                 transition: all 2s ease-in-out;
                 transform: rotate(360deg);
-                background-color: #22cbff; 
+                background-color: #22cbff;
                 box-shadow: 9px 9px 16px rgba(255, 255, 255, 0.39),
-                -9px -9px 16px rgba(255, 255, 255, 0.39);;
-
+                    -9px -9px 16px rgba(255, 255, 255, 0.39);
+                ;
             }
         }
-        .hide {      display: none;}
+        .hide {
+            display: none;
+        }
     }
+    // CONTACTO
     #formulario {
         font-family: "Menu";
-        letter-spacing: 2px;
-        border-radius:($borderRadious/2);
+        letter-spacing: 1.5px;
+        border-radius: ($borderRadious/2);
         box-shadow: $borderShadow;
         animation-name: animation_player;
         animation-duration: 5s;
@@ -70,14 +82,13 @@
             border: solid 2px #333;
             letter-spacing: 2px;
             transition: 0.8s ease;
-
         }
         .btn:hover {
-            background-color: #22e5ffea;
+            background-color: #33daf0;
             color: #fff;
         }
     }
-
+    // TOURS
     .fcTitle {
         animation-name: animation_player;
         animation-duration: 5s;
@@ -93,7 +104,7 @@
             color: #1d1d1b;
             font-size: 2.6rem;
             letter-spacing: 0;
-            text-align: center;        
+            text-align: center;
         }
     }
     .fc_tours {
@@ -105,12 +116,12 @@
         max-width: 1328px;
         padding-left: 24px;
         padding-right: 24px;
-        .tour-date-list{
+        .tour-date-list {
             position: relative;
-             min-height: 50vh;
-             font-family: "Menu";
-             letter-spacing: 0;
-            .tour-date {              
+            min-height: 50vh;
+            font-family: "Menu";
+            letter-spacing: 0;
+            .tour-date {
                 align-items: flex-end;
                 justify-content: space-between;
                 margin-bottom: 16px;
@@ -122,24 +133,17 @@
                     border-bottom: 4px solid #1d1d1b;
                     margin-right: 5px;
                     padding-bottom: 12px;
-                    
-                    .tour-date__info__dates{
+                    .tour-date__info__dates {
                         min-width: 25%;
-                         margin-bottom: 0;
+                        margin-bottom: 0;
                     }
                     .tour-date__info__venue {
                         min-width: 25%;
                         margin-bottom: 0;
-                       
-
                     }
                     .tour-date__info__location {
                         min-width: 50%;
                         margin-bottom: 0;
-                       
-                    }
-                    .tour-date__link {
-                        min-width: 125px;
                     }
                     .button {
                         background-color: transparent;
@@ -152,14 +156,12 @@
                         display: inline-block;
                         cursor: pointer;
                     }
-
                     .button:hover {
-                        background-color:  #22e5ffea;
+                        background-color: #33daf0;
                     }
                     a {
                         &:hover {
                             color: #fff;
-
                         }
                     }
                     .button--black {
@@ -171,191 +173,160 @@
                         font-size: 1.6rem;
                         padding: 0.4rem 0.8rem;
                         white-space: nowrap;
-                    }                  
+                    }
                     .tour-date__info__location .label {
-                        font-size: 25px!important;
+                        font-size: 25px;
                         line-height: 1;
                         color: #1d1d1b;
                         text-align: left;
                     }
-                    .tour-date__info__dates .label{
-                        font-size: 20px!important;
+                    .tour-date__info__dates .label {
+                        font-size: 20px;
                         line-height: 1;
                         color: #1d1d1b;
                         text-align: left;
-
                     }
                     .tour-date__info__venue .label {
-                        font-size: 25px!important;
+                        font-size: 25px;
                         line-height: 1;
                         color: #1d1d1b;
                         text-align: left;
                     }
                 }
-
             }
         }
     }
-    
     .tour-date-list {
         position: relative;
         min-height: 50vh;
-        
-        }
+    }
+    // ABOUT
     #aboutBlue {
         @include subtitulos;
         animation-name: animation_player;
         animation-duration: 5s;
-      }
-      #fotosAbout {
+    }
+    #fotosAbout {
         animation-name: animation_player;
         animation-duration: 5s;
-      }
-
-
-
-
-
-    //   DISCOGRAFIA
-
-
-
-.slide-container{
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  max-width: 1120px;
-  width: 80%;
-  padding: 40px 0;
-  animation-name: animation_player;
-  animation-duration: 5s;
-}
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-  padding: 60px;
-}
-
-
-.swiper-navBtn{
-  color: #333;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 45px;
-  font-weight: 800;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
-}
-
-
-
-
-
-
-
-
-     .card {
-         width: 300px;
-         height: 350px;
-         background-color: transparent;      
-         border-color: transparent; 
-     }
-    .card .face {
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-         backface-visibility: hidden;
-         overflow: hidden;
-         transition: 2s;
-        
-     }
-     .card .front {
-         transform: perspective(600px) rotateY(0deg);
-         box-shadow: $borderShadow;
-        img {
-             position: absolute;
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-      }
-        h3 {
-             position: absolute;
-             bottom: 0;
-            width: 100%;
-             height: 50px;
-             line-height: 45px;
-             color: white;           background:rgba(0, 0, 0, 0.39);
-         text-align: center;
-         }
-     }
-     .card .back {
-         transform: perspective(600px) rotateY(180deg);
-        box-shadow: $borderShadow;
-         padding: 15px;
-         display: flex;         flex-direction: column;
-        justify-content: space-between;
-         text-align: center;
-        h3{
-             font-family: "Menu";
-             color: #1d1d1b;
-            font-size: 2rem;
-             letter-spacing: 2px;
-         }
-         p {
-             font-family: "Menu";
-             color: #1d1d1b;
-             font-size: .7rem;
-             letter-spacing: 2px;
-        }
-        .link {
-             border-top: solid 1px;
-             height: 50px;
-             line-height: 50px;
-             a {
-                 color: #333;
-            }        }
-     }
-     .card:hover .front {
-        transform: perspective(600px) rotateY(180deg);
-     }
-     .card:hover .back {
-        transform: perspective(600px) rotateY(360deg);
-     }
-}
-     /* ANIMACIONES DEL MAIN */
-     @keyframes animation_player {
-        0% {opacity: 0%;
-        }
-    
-        100% {    opacity: 100%;
-       
-      }
+        margin-bottom: 0px;
     }
+    //   DISCOGRAFIA
+    // SWIPER
+    .slide-container {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1120px;
+        width: 100%;
+        padding: 40px 0;
+        animation-name: animation_player;
+        animation-duration: 5s;
+    }
+    .slide-content {
+        margin: 0 40px;
+        overflow: hidden;
+        border-radius: 25px;
+        padding: 60px;
+    }
+    .swiper-navBtn {
+        color: #333;
+        transition: color 0.3s ease;
+    }
+    .swiper-navBtn:hover {
+        color: #4070F4;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-pagination-bullet {
+        background-color: #6E93f7;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #4070F4;
+    }
+    @media screen and (max-width: 768px) {
+        .slide-content {
+            margin: 0 10px;
+        }
+        .swiper-navBtn {
+            display: none;
+        }
+    }
+    // CARDS
+    .card {
+        width: 300px;
+        height: 350px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transition: 2s;
+    }
+    .card .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: $borderShadow;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        box-shadow: $borderShadow;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        h3 {
+            font-family: "Menu";
+            color: #1d1d1b;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-family: "Menu";
+            color: #1d1d1b;
+            font-size: .7rem;
+            letter-spacing: 2px;
+        }
+        iframe {
+            box-shadow: $borderShadow;
+        }
+    }
+    .card:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+    }
+
+    .card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+/* ANIMACIONES DEL MAIN */
+@keyframes animation_player {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

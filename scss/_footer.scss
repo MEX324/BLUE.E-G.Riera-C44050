@@ -1,63 +1,68 @@
-#footer{ height: 10vh;
-    #footerCont{
-        display: flex;
-        height: 10vh;
-      align-items: center;
-      justify-content: center;
-      animation-name: animation_redes;
-        animation-duration: 2s;
-        #redes{
-            padding: 0px;
-            margin: 0px;
-            li{  display: inline-block;
-                margin: 10px;
-                height: 50px;
-                text-align: center;
-                a{  display: block;
-                    padding: 0 10px;
-                    background: #333;
-                    color: #fff;
-                    line-height: 50px;
-                    width: 50px;
-                    font-size: 1.5em;
-                    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
-                    border-radius: 13%;
-                   
-                    &:hover {
-                      filter:blur(2px);
-                      transform:translateY(-3px) scale(1.20);
-                      box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.9);
-                      filter: none;
-                      transition:.5s;
-                }
-            } 
-            .facebook:hover {
-                background: map-get($colores-redesMenu , "facebook" ),
-              }
-              .instagram:hover {
-                background: map-get($colores-redesMenu , "instagram" ),
-              }
-              .spotify:hover {
-                background: map-get($colores-redesMenu , "spotify" ),
-              }
-             .youtube:hover {
-                background: map-get($colores-redesMenu , "youtube" ),
-              }
-             .soundcloud:hover {
-                background: map-get($colores-redesMenu , "soundcloud" ),
-              }
+#footer {
+  height: 10vh;
+  #footerCont {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    animation-name: animation_redes;
+    animation-duration: 2s;
+    #redes {
+      padding: 0px;
+      margin: 0px;
+      li {
+        display: inline-block;
+        margin: 10px;
+        height: 10px;
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 0 10px;
+          background: #333;
+          color: #fff;
+          line-height: 50px;
+          width: 50px;
+          font-size: 1.5em;
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+          border-radius: 13%;
+
+          &:hover {
+            filter: blur(2px);
+            transform: translateY(-3px) scale(1.20);
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9);
+            filter: none;
+            transition: .5s;
+          }
         }
- 
+        .facebook:hover {
+          background: map-get($colores-redesMenu , "facebook"),
+        }
+        .instagram:hover {
+          background: map-get($colores-redesMenu , "instagram"),
+        }
+        .spotify:hover {
+          background: map-get($colores-redesMenu , "spotify"),
+        }
+        .youtube:hover {
+          background: map-get($colores-redesMenu , "youtube"),
+        }
+        .soundcloud:hover {
+          background: map-get($colores-redesMenu , "soundcloud"),
+        }
+      }
     }
-}
+  }
 }
 #footerCont ul:hover a {
-    filter: blur(2px);
+  filter: blur(2px);
+}
+/* ANIMACION FOOTER */
+@keyframes animation_redes {
+  0% {
+    transform: translateY(250px);
   }
-
-  /* ANIMACION FOOTER */
-  
-  @keyframes animation_redes {
-    0%{ transform: translateY(250px);}
-    100% { transform: translateY(0px);}
+  100% {
+    transform: translateY(0px);
   }
+}

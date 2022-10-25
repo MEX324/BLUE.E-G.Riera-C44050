@@ -6,11 +6,11 @@ var swiper = new Swiper(".slide-content", {
     fade: 'true',
     grabCursor: 'true',
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  
-    breakpoints:{
+
+    breakpoints: {
         0: {
             slidesPerView: 1,
         },
@@ -21,5 +21,4 @@ var swiper = new Swiper(".slide-content", {
             slidesPerView: 3,
         },
     },
-  });
-  
+});

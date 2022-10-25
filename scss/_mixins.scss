@@ -2,160 +2,187 @@
         font-family: "Menu";
         font-weight: 500;
         font-size: 2.5em;
-      }
+        letter-spacing: 1.8px;
+}
 @mixin subtitulos {
         font-family: "Menu";
         font-weight: 400;
         font-size: 1.5em;
-        
+        letter-spacing: 1.5px;
 }
-@mixin logo  {
-        width: 70px;   
-        height: 70px;   
-        padding: 0;     
+@mixin logo {
+        width: 70px;
+        height: 70px;
+        padding: 0;
         border-radius: 20%;
-      }
-      
+}
 @mixin query ($vista) {
-        header{
-                #logo{
-                        @if $vista == tablet {
-                                @media only screen and (max-width:1199.98px){
-                                display: none;
-        
-                                }    
-                        }                          
-                }
-                #vacioDesktop{
-                        @if $vista == tablet {
-                                @media only screen and (max-width: 1199.98px){
-                                display: none;
-        
+        header {
+                #logo {
+                        @if $vista ==tablet {
+                                @media only screen and (max-width:1199.98px) {
+                                        display: none;
                                 }
                         }
                 }
-                #menuDesktop{
-                        @if $vista == tablet {
-                                @media only screen and (max-width: 1199.98px){
-                                display: none;
-        
+                #vacioDesktop {
+                        @if $vista ==tablet {
+                                @media only screen and (max-width: 1199.98px) {
+                                        display: none;
                                 }
                         }
                 }
-                #mobileLogo{
-                        @if $vista == desktop {
-                                @media only screen and (min-width:1200px){
-                                display: none;
-        
+                #menuDesktop {
+                        @if $vista ==tablet {
+                                @media only screen and (max-width: 1199.98px) {
+                                        display: none;
+                                }
+                        }
+                }
+                #mobileLogo {
+                        @if $vista ==desktop {
+                                @media only screen and (min-width:1200px) {
+                                        display: none;
                                 }
                         }
                 }
         }
-        main{
-                #aboutBlue{
-                        p { @if $vista == desktop {
-                                @media only screen and (min-width: 1400px){
-                                       
+        // MAIN
+        main {
+                // TOURS
+                .fc_tours {
+                        .tour-date-list {
+                                .tour-date {
+                                        .tour-date__info {
+                                                font-size: 15px;
+                                                .tour-date__info__venue {
+                                                        @if $vista ==mobile {
+                                                                @media only screen and (max-width: 390px) {
+                                                                        display: none;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+                // ABOUT
+                #aboutBlue {
+                        h1 {
+                                @if $vista ==mobile {
+                                        @media only screen and (max-width: 390px) {
+                                                font-size: 1.5em;
+                                        }
+                                }
+                                @else if $vista ==pro {
+                                        @media only screen and (min-width: 390px) {}
+                                }
+                        }
+                        p {
+                                @if $vista ==desktop {
+                                        @media only screen and (min-width: 1400px) {
+                                                font-weight: 300;
+                                                font-size: .9em;
+                                        }
+                                }
+                                @else if $vista ==laptop {
+                                        @media only screen and (max-width: 1399.98px) {
+                                                font-weight: 400;
+                                                font-size: .8em;
+                                        }
+                                }
+                                @else if $vista ==tablet {
+                                        @media only screen and (max-width: 1199.98px) {
+                                                font-weight: 300;
+                                                font-size: .55em;
+                                        }
+                                }
+                                @else if $vista ==tablet {
+                                        @media only screen and (max-width: 500px) {
+                                                font-weight: 300;
+                                                font-size: .10em;
+                                        }
+                                }
+                                @else if $vista ==mobile {
+                                        @media only screen and (max-width: 360px) {
+                                                font-weight: 300;
+                                                font-size: .4em;
+                                        }
+                                }
+                                @else if $vista ==pro {
+                                        @media only screen and (max-width: 390px) {
+                                                font-weight: 300;
+                                                font-size: .5em;
+                                        }
+                                }
+                        }
+                }
+                #fotosAbout {
+                        @if $vista ==desktop {
+                                @media only screen and (min-width: 1400px) {
                                         font-weight: 300;
                                         font-size: .9em;
-        
                                 }
-                                
                         }
-                        @else if $vista == laptop {
-                                @media only screen and (max-width: 1399.98px){
-                                       
+                        @else if $vista ==laptop {
+                                @media only screen and (max-width: 1399.98px) {
                                         font-weight: 400;
                                         font-size: .8em;
                                 }
-        
-                                }
-                        @else if $vista == tablet {
-                                @media only screen and (max-width: 1199.98px){
-                                       
+                        }
+                        @else if $vista ==tablet {
+                                @media only screen and (max-width: 1199.98px) {
                                         font-weight: 300;
                                         font-size: .55em;
-        
                                 }
-                                
                         }
-                        @else if $vista == tablet {
-                                @media only screen and (max-width: 500px){
-                                       
+                        @else if $vista ==tablet {
+                                @media only screen and (max-width: 500px) {
                                         font-weight: 300;
                                         font-size: .10em;
-        
                                 }
-                                
                         }
-                                
+                        @else if $vista ==mobile {
+                                @media only screen and (max-width: 360px) {
+                                        width: 20rem;
+                                        height: 13rem;
+                                }
+                        }
+                        @else if $vista ==pro {
+                                @media only screen and (min-width: 390px) {
+                                        width: 32rem;
+                                        height: 22rem;
+                                }
                         }
                 }
-                        
-                
-                #discos{
-
-                         #carouselIndicators{
-                                 @if $vista == mobile {
-                                         @media only screen and (max-width: 767.98px){
-                                                 width: 22rem; 
-                                                 height: 22rem;                     
-                                         }
-                                }
-                                 iframe {
-                                         @if $vista == mobile {
-                                                 @media only screen and (max-width: 767.98px){
-                                                         width: 22rem;    
-                                                         height: 22rem;                   
-                                                 }
-                                                
-                                         }
-                                 }
-                         }
-                 }
-                }     
-        
-        tbody{
-                tr{
-                        th , td{
-                                @if $vista == desktop {
-                                        @media only screen and (min-width: 1400px){
-                                               
-                                                font-weight: 400;
-                                                font-size: .8em;
-                
-                                        }
-                                        
-                                }
-                                @else if $vista == laptop {
-                                        @media only screen and (max-width: 1399.98px){
-                                               
-                                                font-weight: 400;
-                                                font-size: .8em;
-                                        }
-                
-                                        }
-                                @else if $vista == tablet {
-                                        @media only screen and (max-width: 1199.98px){
-                                               
-                                                font-weight: 300;
-                                                font-size: .6em;
-                
-                                        }
-                                        
-                                }
-                                @else if $vista == mobile {
-                                        @media only screen and (max-width: 767.98px){
-                                               
-                                                font-weight: 300;
-                                                font-size: .55em;
-                
-                                        }
-                                        
+        }
+        // FOOTER
+        #footer {
+                #footerCont {
+                        #redes {
+                                li {
+                                        text-align: center;
+                                        justify-content: center;
+                                        a {
+                                                @if $vista ==mobile {
+                                                        @media only screen and (max-width: 360px) {
+                                                                padding: 0px;
+                                                                line-height: 30px;
+                                                                width: 30px;
+                                                                font-size: 1em;
+                                                        }
+                                                }
+                                                @else if $vista ==pro {
+                                                        @media only screen and (max-width: 390px) {
+                                                                padding: 0 10px;
+                                                                line-height: 40px;
+                                                                width: 40px;
+                                                                font-size: 1em;
+                                                        }
+                                                }
+                                       }
                                 }
                         }
-                        
                 }
-                
         }
 }

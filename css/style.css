@@ -33,6 +33,7 @@ header {
         font-family: 'Menu';
         font-size: small;
         transition: .5s;
+        letter-spacing: 1.5px;
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
         border-radius: 5px; }
         header .desktopMenu .desktopUl .desktopLi a:hover {
@@ -68,6 +69,7 @@ header {
         font-family: "Menu";
         font-weight: 400;
         font-size: 1.5em;
+        letter-spacing: 1.5px;
         text-transform: uppercase; }
         header #burguer #offcanvasDarkNavbar #navMenu li a:hover {
           color: #2081db;
@@ -98,7 +100,7 @@ header {
       #footer #footerCont #redes li {
         display: inline-block;
         margin: 10px;
-        height: 50px;
+        height: 10px;
         text-align: center; }
         #footer #footerCont #redes li a {
           display: block;
@@ -161,11 +163,13 @@ header {
       font-family: "Menu";
       font-weight: 500;
       font-size: 2.5em;
+      letter-spacing: 1.8px;
       margin: 20px; }
     #main .player .playerSong {
       font-family: "Menu";
       font-weight: 400;
       font-size: 1.5em;
+      letter-spacing: 1.5px;
       width: 100%;
       text-align: center;
       margin: 0; }
@@ -196,7 +200,7 @@ header {
       display: none; }
   #main #formulario {
     font-family: "Menu";
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     border-radius: 10%;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
     animation-name: animation_player;
@@ -210,7 +214,7 @@ header {
       letter-spacing: 2px;
       transition: 0.8s ease; }
     #main #formulario .btn:hover {
-      background-color: #22e5ffea;
+      background-color: #33daf0;
       color: #fff; }
   #main .fcTitle {
     animation-name: animation_player;
@@ -263,8 +267,6 @@ header {
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__location {
             min-width: 50%;
             margin-bottom: 0; }
-          #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__link {
-            min-width: 125px; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .button {
             background-color: transparent;
             font-weight: 300;
@@ -276,7 +278,7 @@ header {
             display: inline-block;
             cursor: pointer; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .button:hover {
-            background-color: #22e5ffea; }
+            background-color: #33daf0; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info a:hover {
             color: #fff; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .button--black {
@@ -288,17 +290,17 @@ header {
             padding: 0.4rem 0.8rem;
             white-space: nowrap; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__location .label {
-            font-size: 25px !important;
+            font-size: 25px;
             line-height: 1;
             color: #1d1d1b;
             text-align: left; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__dates .label {
-            font-size: 20px !important;
+            font-size: 20px;
             line-height: 1;
             color: #1d1d1b;
             text-align: left; }
           #main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__venue .label {
-            font-size: 25px !important;
+            font-size: 25px;
             line-height: 1;
             color: #1d1d1b;
             text-align: left; }
@@ -309,18 +311,20 @@ header {
     font-family: "Menu";
     font-weight: 400;
     font-size: 1.5em;
+    letter-spacing: 1.5px;
     animation-name: animation_player;
     animation-duration: 5s; }
   #main #fotosAbout {
     animation-name: animation_player;
-    animation-duration: 5s; }
+    animation-duration: 5s;
+    margin-bottom: 0px; }
   #main .slide-container {
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1120px;
-    width: 80%;
+    width: 100%;
     padding: 40px 0;
     animation-name: animation_player;
     animation-duration: 5s; }
@@ -373,15 +377,6 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    #main .card .front h3 {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 50px;
-      line-height: 45px;
-      color: white;
-      background: rgba(0, 0, 0, 0.39);
-      text-align: center; }
   #main .card .back {
     transform: perspective(600px) rotateY(180deg);
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39);
@@ -393,19 +388,15 @@ header {
     #main .card .back h3 {
       font-family: "Menu";
       color: #1d1d1b;
-      font-size: 2rem;
+      font-size: 1.1rem;
       letter-spacing: 2px; }
     #main .card .back p {
       font-family: "Menu";
       color: #1d1d1b;
       font-size: .7rem;
       letter-spacing: 2px; }
-    #main .card .back .link {
-      border-top: solid 1px;
-      height: 50px;
-      line-height: 50px; }
-      #main .card .back .link a {
-        color: #333; }
+    #main .card .back iframe {
+      box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.39); }
   #main .card:hover .front {
     transform: perspective(600px) rotateY(180deg); }
   #main .card:hover .back {
@@ -431,15 +422,25 @@ body {
   header #mobileLogo {
     display: none; } }
 
+main .fc_tours .tour-date-list .tour-date .tour-date__info {
+  font-size: 15px; }
+
 @media only screen and (min-width: 1400px) {
   main #aboutBlue p {
     font-weight: 300;
     font-size: .9em; } }
 
 @media only screen and (min-width: 1400px) {
-  tbody tr th, tbody tr td {
-    font-weight: 400;
-    font-size: .8em; } }
+  main #fotosAbout {
+    font-weight: 300;
+    font-size: .9em; } }
+
+#footer #footerCont #redes li {
+  text-align: center;
+  justify-content: center; }
+
+main .fc_tours .tour-date-list .tour-date .tour-date__info {
+  font-size: 15px; }
 
 @media only screen and (max-width: 1399.98px) {
   main #aboutBlue p {
@@ -447,9 +448,13 @@ body {
     font-size: .8em; } }
 
 @media only screen and (max-width: 1399.98px) {
-  tbody tr th, tbody tr td {
+  main #fotosAbout {
     font-weight: 400;
     font-size: .8em; } }
+
+#footer #footerCont #redes li {
+  text-align: center;
+  justify-content: center; }
 
 @media only screen and (max-width: 1199.98px) {
   header #logo {
@@ -463,27 +468,72 @@ body {
   header #menuDesktop {
     display: none; } }
 
+main .fc_tours .tour-date-list .tour-date .tour-date__info {
+  font-size: 15px; }
+
 @media only screen and (max-width: 1199.98px) {
   main #aboutBlue p {
     font-weight: 300;
     font-size: .55em; } }
 
 @media only screen and (max-width: 1199.98px) {
-  tbody tr th, tbody tr td {
-    font-weight: 300;
-    font-size: .6em; } }
-
-@media only screen and (max-width: 767.98px) {
-  main #discos #carouselIndicators {
-    width: 22rem;
-    height: 22rem; } }
-
-@media only screen and (max-width: 767.98px) {
-  main #discos #carouselIndicators iframe {
-    width: 22rem;
-    height: 22rem; } }
-
-@media only screen and (max-width: 767.98px) {
-  tbody tr th, tbody tr td {
+  main #fotosAbout {
     font-weight: 300;
     font-size: .55em; } }
+
+#footer #footerCont #redes li {
+  text-align: center;
+  justify-content: center; }
+
+main .fc_tours .tour-date-list .tour-date .tour-date__info {
+  font-size: 15px; }
+  @media only screen and (max-width: 390px) {
+    main .fc_tours .tour-date-list .tour-date .tour-date__info .tour-date__info__venue {
+      display: none; } }
+
+@media only screen and (max-width: 390px) {
+  main #aboutBlue h1 {
+    font-size: 1.5em; } }
+
+@media only screen and (max-width: 360px) {
+  main #aboutBlue p {
+    font-weight: 300;
+    font-size: .4em; } }
+
+@media only screen and (max-width: 360px) {
+  main #fotosAbout {
+    width: 20rem;
+    height: 13rem; } }
+
+#footer #footerCont #redes li {
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (max-width: 360px) {
+    #footer #footerCont #redes li a {
+      padding: 0px;
+      line-height: 30px;
+      width: 30px;
+      font-size: 1em; } }
+
+main .fc_tours .tour-date-list .tour-date .tour-date__info {
+  font-size: 15px; }
+
+@media only screen and (max-width: 390px) {
+  main #aboutBlue p {
+    font-weight: 300;
+    font-size: .5em; } }
+
+@media only screen and (min-width: 390px) {
+  main #fotosAbout {
+    width: 32rem;
+    height: 22rem; } }
+
+#footer #footerCont #redes li {
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (max-width: 390px) {
+    #footer #footerCont #redes li a {
+      padding: 0 10px;
+      line-height: 40px;
+      width: 40px;
+      font-size: 1em; } }
