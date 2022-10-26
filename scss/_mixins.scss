@@ -57,7 +57,7 @@
                                                 font-size: 15px;
                                                 .tour-date__info__venue {
                                                         @if $vista ==mobile {
-                                                                @media only screen and (max-width: 390px) {
+                                                                @media only screen and (max-width: 420px) {
                                                                         display: none;
                                                                 }
                                                         }
@@ -70,7 +70,7 @@
                 #aboutBlue {
                         h1 {
                                 @if $vista ==pro {
-                                        @media only screen and (max-width: 390px) {
+                                        @media only screen and (max-width: 420px) {
                                                 font-size: 1.5em;
                                         }
                                 }
@@ -101,13 +101,13 @@
                                         }
                                 }
                                 @else if $vista ==pro {
-                                        @media only screen and (max-width: 390px) {
+                                        @media only screen and (max-width: 420px) {
                                                 font-weight: 300;
                                                 font-size: .41em;
                                         }
                                 }
 
-                                
+
                         }
                 }
                 #fotosAbout {
@@ -142,7 +142,7 @@
                                 }
                         }
                         @else if $vista ==pro {
-                                @media only screen and (min-width: 390px) {
+                                @media only screen and (min-width: 420px) {
                                         width: 32rem;
                                         height: 22rem;
                                 }
@@ -165,7 +165,7 @@
                                         }
                                         a {
                                                 @if $vista ==pro {
-                                                        @media only screen and (max-width: 390px) {
+                                                        @media only screen and (max-width: 420px) {
                                                                 padding: 0 10px;
                                                                 line-height: 40px;
                                                                 width: 40px;
