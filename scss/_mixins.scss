@@ -57,7 +57,7 @@
                                                 font-size: 15px;
                                                 .tour-date__info__venue {
                                                         @if $vista ==mobile {
-                                                                @media only screen and (max-width: 420px) {
+                                                                @media only screen and (max-width: 768px) {
                                                                         display: none;
                                                                 }
                                                         }

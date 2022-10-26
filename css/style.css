@@ -487,7 +487,7 @@ main .fc-tours .tour-date-list .tour-date .tour-date__info {
 
 main .fc-tours .tour-date-list .tour-date .tour-date__info {
   font-size: 15px; }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 768px) {
     main .fc-tours .tour-date-list .tour-date .tour-date__info .tour-date__info__venue {
       display: none; } }
 
